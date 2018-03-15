@@ -10,7 +10,12 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": false,
-            "brackets-synapse.version": "1.2.90"
+            "brackets-synapse.version": "1.2.90",
+            "bigeyex.bracketsSFTPUpload.E:/Design/Digital Team/Apis Website v3/apis-one-pager/|changed_files": {
+                "E:/Design/Digital Team/Apis Website v3/apis-one-pager/Gulpfile.js": 1,
+                "E:/Design/Digital Team/Apis Website v3/apis-one-pager/scss/_menu.scss": 1,
+                "E:/Design/Digital Team/Apis Website v3/apis-one-pager/scss/index.scss": 1
+            }
         }
     }
 }
