@@ -1,0 +1,65 @@
+#menu {
+    background: $dark;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    ul {
+        @extend %semiBold;
+        width: 40%;
+        letter-spacing: 0.13rem;
+        color: #8d9aa3;
+        display: flex;
+        margin: 25px auto;
+        justify-content: space-around;
+        font-size: 0.85rem;
+        font-stretch: ultra-expanded;
+        text-transform: uppercase;
+        
+        li {
+            list-style: none;
+            
+            a {
+                color: #8d9aa3;
+                text-decoration: none;
+                vertical-align: sub;
+                &:hover {
+                    color: white;
+                    text-decoration: none;            
+                }
+            }
+            &.active a{
+                color: #ee8a1e;
+            }
+        }
+        
+        span {
+            color: white;
+            font-size: 33px;
+            vertical-align: middle;
+            margin-top: -15px;
+            vertical-align: sub;
+        }
+    }
+    .joinButton{
+        position: absolute;
+        width: 260px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: inline-block;
+        background: $orange;
+        @extend %semiBold;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 0.13rem;
+        cursor: pointer;
+        &:hover{
+            background: $grey;
+        }
+    }
+}

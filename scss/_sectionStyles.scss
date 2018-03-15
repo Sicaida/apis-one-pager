@@ -1,0 +1,38 @@
+.section { //@extend %section;
+    background-origin: center;
+    background-size: cover;
+    background-position:center; 
+    position: relative;
+    .content{
+        max-width: 560px;
+        @include centerer;
+    }
+}
+
+#section0{
+    background: white;
+}
+
+#section1{
+    background: $dark;
+}
+
+#section2{
+    background: $blue;
+}
+
+#section3{
+    background: white;
+}
+
+#section4{
+    background: $grey;
+}
+
+#section5{
+    background: $dark;
+}
+
+#section6{
+    background: purple;
+}
