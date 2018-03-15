@@ -1,65 +1,19 @@
 <!DOCTYPE html>
 <html lang="">   
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apis Group</title>
-    <link rel="stylesheet" href="css/index.css">
-    <meta name="author" content="Max INgham" />
-    <meta name="description" content="Apis Group" />
-    <meta name="keywords"  content="Apis Group" />
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="modules/scrolloverflow.js"></script>
-    <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                loopBottom: true,
-                anchors: ['header', 'what', 'team', 'about', 'contact', 'footer'],
-                menu: '#menu'
-            });
-        });
-    </script>
-    </head>
-    <body>
+
+    @import "head.html"
+
+<body>
     
     @import "menu.html"
     
-    
     <div id="fullpage">
-        <div class="section active" id="section0"><a href="#header"></a>
-            <div class="content">
-                <h1>Hero</h1> 
-            </div>
-        </div>
-        <div class="section" id="section1"><a href="#what"></a>
-            <div class="content">
-                <h1>Who we are</h1>
-            </div>
-            </div>
-        <div class="section" id="section2"><a href="#team"></a>
-            <div class="content">
-                <h1>What we do</h1>
-            </div>
-            </div>
-        <div class="section" id="section3"><a href="#about"></a>
-            <div class="content">
-                <h1>Why join us</h1>
-            </div>
-            </div>
-        <div class="section" id="section4"><a href="#contact"></a>
-            <div class="content">
-                <h1>news</h1>
-            </div>
-            </div>
-        <div class="section" id="section5"><a href="#footer"></a>
-            <div class="content">
-                <h1>contact</h1>
-            </div>
-            </div>
+        @import "header.html"
+        @import "whoWeAre.html"
+        @import "whatWeDo.html"
+        @import "whyJoinUs.html"
+        @import "news.html"
+        @import "contact.html"
     </div>
     
 </body>
