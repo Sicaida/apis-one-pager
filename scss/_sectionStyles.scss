@@ -1,38 +1,50 @@
-.section { //@extend %section;
-    background-origin: center;
+@mixin section{
+    background-image: url("https://picsum.photos/g/1200/1200/?image=#{random(1100)}"); //interpolate a random number to get a different image in each mixin instance
     background-size: cover;
     background-position:center; 
+    background-blend-mode: soft-light;
+}
+
+.section { //@extend %section;
     position: relative;
     .content{
         max-width: 560px;
         @include centerer;
-    }
+    } 
 }
 
 #section0{
-    background: white;
+    background-color: $dark;
+    @include section; 
 }
 
 #section1{
     background: $dark;
+    @include section; 
 }
 
 #section2{
     background: $blue;
+    @include section;  
 }
 
 #section3{
     background: white;
+    @include section; 
 }
 
 #section4{
     background: $grey;
+    @include section; 
 }
 
 #section5{
     background: $dark;
+    @include section; 
 }
 
 #section6{
     background: purple;
+    @include section; 
 }
+

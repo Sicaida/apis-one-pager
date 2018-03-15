@@ -357,9 +357,6 @@ h1 {
       background: #a2b6c6; }
 
 .section {
-  background-origin: center;
-  background-size: cover;
-  background-position: center;
   position: relative; }
   .section .content {
     max-width: 560px;
@@ -369,25 +366,53 @@ h1 {
     transform: translate(-50%, -50%); }
 
 #section0 {
-  background: white; }
+  background-color: #1f2833;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=309");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section1 {
-  background: #1f2833; }
+  background: #1f2833;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=644");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section2 {
-  background: #7cbbce; }
+  background: #7cbbce;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=1012");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section3 {
-  background: white; }
+  background: white;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=22");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section4 {
-  background: #a2b6c6; }
+  background: #a2b6c6;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=127");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section5 {
-  background: #1f2833; }
+  background: #1f2833;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=314");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 #section6 {
-  background: purple; }
+  background: purple;
+  background-image: url("https://picsum.photos/g/1200/1200/?image=926");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; }
 
 h1 {
   font-size: 5rem;
