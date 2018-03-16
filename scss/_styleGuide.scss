@@ -1,0 +1,59 @@
+
+h1{
+    @extend %ultraLight;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+h2{
+    @extend %regular;
+    color: $orange;
+    font-size: 1.35rem;
+    letter-spacing: 0.1rem;
+    line-height:2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+p{
+    @extend %light;
+    color: white;
+    font-size: 0.88rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+ul{
+
+}
+
+li{
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
