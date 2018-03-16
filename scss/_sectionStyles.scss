@@ -7,44 +7,68 @@
 
 .section { //@extend %section;
     position: relative;
-    .content{
+    .container{
         max-width: 560px;
         @include centerer;
     } 
 }
 
 #section0{
-    background-color: $dark;
+    background-color: white;
     @include section; 
+    h1{
+        color: $dark;
+    }
 }
 
 #section1{
     background: $dark;
     @include section; 
+    h1{
+        color: white;
+    }
 }
 
 #section2{
     background: $blue;
     @include section;  
+    h1{
+        color: white;
+    }
 }
 
 #section3{
     background: white;
     @include section; 
+    h1{
+        color: $orange;
+    }
 }
 
 #section4{
     background: $grey;
     @include section; 
+    h1{
+        color: $dark;
+    }
 }
 
 #section5{
     background: $dark;
     @include section; 
+    h1{
+        color: white;
+    }
 }
 
-#section6{
-    background: purple;
-    @include section; 
+hr.titleLine {
+    width: 3000px;
+    position: absolute;
+    left: right;
+    right: 10px;
+    height:0.15rem;
+    margin: 0;
+    border: none;
+    background-image: linear-gradient(to right, transparent 50%, #ffffff 50%);
+    background-size: 19px 100%;
 }
-
