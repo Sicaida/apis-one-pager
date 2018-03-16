@@ -1,37 +1,8 @@
 @import 'normalize';
 @import 'variables';
 @import 'mixins'; 
+@import 'styleGuide';
 @import 'menu';
 @import 'sectionStyles';
 @import 'section0';
 
-
-h1{
-    @extend %ultraLight;
-    font-size: 5rem;
-    letter-spacing: 0.5rem;
-}
-
-h2{
-    
-}
-
-h3{
-    
-}
-
-h4{
-    
-}
-
-p{
-    
-}
-
-ul{
-    
-}
-
-li{
-    
-}
