@@ -1,8 +1,8 @@
 @mixin section{
-    background-image: url("https://picsum.photos/g/1200/1200/?image=#{random(1100)}"); //interpolate a random number to get a different image in each mixin instance
+   // background-image: url("https://picsum.photos/g/1200/1200/?image=#{random(1100)}"); //interpolate a random number to get a different image in each mixin instance
     background-size: cover;
     background-position:center; 
-    background-blend-mode: soft-light;
+//    background-blend-mode: soft-light;
 }
 
 .section { //@extend %section;
@@ -15,7 +15,9 @@
 
 #section0{
     background-color: white;
-    @include section; 
+    background-image: url("/images/hero.png");
+    @include section;
+    background-position: bottom;
     h1{
         color: $dark;
     }
@@ -23,6 +25,7 @@
 
 #section1{
     background: $dark;
+    background-image: url("/images/whoWeAre.png");
     @include section; 
     h1{
         color: white;
@@ -31,6 +34,7 @@
 
 #section2{
     background: $blue;
+    background-image: url("/images/whatWeDo.png");
     @include section;  
     h1{
         color: white;
@@ -39,6 +43,7 @@
 
 #section3{
     background: white;
+    background-image: url("/images/whyJoinUs.png");
     @include section; 
     h1{
         color: $orange;

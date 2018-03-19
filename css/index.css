@@ -408,55 +408,48 @@ p {
 
 #section0 {
   background-color: white;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=336");
+  background-image: url("/images/hero.png");
   background-size: cover;
   background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: bottom; }
   #section0 h1 {
     color: #1f2833; }
 
 #section1 {
   background: #1f2833;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=125");
+  background-image: url("/images/whoWeAre.png");
   background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: center; }
   #section1 h1 {
     color: white; }
 
 #section2 {
   background: #7cbbce;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=902");
+  background-image: url("/images/whatWeDo.png");
   background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: center; }
   #section2 h1 {
     color: white; }
 
 #section3 {
   background: white;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=138");
+  background-image: url("/images/whyJoinUs.png");
   background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: center; }
   #section3 h1 {
     color: #ee8a1e; }
 
 #section4 {
   background: #a2b6c6;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=33");
   background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: center; }
   #section4 h1 {
     color: #1f2833; }
 
 #section5 {
   background: #1f2833;
-  background-image: url("https://picsum.photos/g/1200/1200/?image=867");
   background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light; }
+  background-position: center; }
   #section5 h1 {
     color: white; }
 
