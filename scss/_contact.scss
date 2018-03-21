@@ -1,0 +1,19 @@
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.mapOverlay{
+    height: 200px;
+    width: 100%;
+    position: relative;
+//    background: white;
+    opacity: 0.9;
+//    outline: solid 3000px #1f2833;
+    box-shadow: 0 0 0 3000px #1f2933;
+    border-radius: 12px;
+    pointer-events: none;
+//    margin-left: -3000px;
+//    mix-blend-mode: multiply;
+    margin-bottom: 25px;
+}

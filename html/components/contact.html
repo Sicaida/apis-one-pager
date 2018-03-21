@@ -2,11 +2,16 @@
 
 <!-- contact.html -->
    <div class="section" id="section5"><a href="#footer"></a>
-    <div class="container">
-        <h1>Contact<hr class="titleLine">
-        </h1>
-    </div>
-       <div class="backgroundImage"></div>
+    
+<!--       <div class="backgroundImage"></div>-->
+       
+ 
+       
+
+       <script type="text/javascript">
+           // When the window has finished loading create our google map below
+           google.maps.event.addDomListener(window, 'load', init);
+
            function init() {
                // Basic options for a simple Google Map
                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -40,5 +45,21 @@
                });
            }
        </script>
+
+       <div id="map"></div>
+
+       <div class="container">
+           <h1>Contact<hr class="titleLine">
+           </h1>
+           <div class="mapOverlay"></div>
+
+           <div class="content">
+               <p class="col-1">hmm</p>
+               <p class="col-1">hmm</p>
+               <p class="col-1">hmm</p>
+              
+           </div>
+       </div>
+
 
 </div>
