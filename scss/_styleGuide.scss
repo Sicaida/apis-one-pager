@@ -1,8 +1,14 @@
+body,html{
+    overflow: hidden !important;
+}
 
 h1{
     @extend %ultraLight;
     font-size: 3rem;
     letter-spacing: 0.3rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
 }
 
 h2{
@@ -30,6 +36,7 @@ p{
     letter-spacing: 0.07rem;
     line-height: 1.3rem;
     margin: 0;
+    position: relative;
 }
 
 ul{
@@ -48,12 +55,18 @@ li{
 
 .col-1 {
     grid-column: span 1;
+    min-width: 0;
+    min-height: 0;
 }
 
 .col-2 {
     grid-column: span 2;
+    min-width: 0;
+    min-height: 0;
 }
 
 .col-3 {
     grid-column: span 3;
+    min-width: 0;
+    min-height: 0;
 }

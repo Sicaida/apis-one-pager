@@ -20,6 +20,7 @@
     background-position: bottom;
     h1{
         color: $dark;
+        -vendor-animation-delay: 2s;
     }
 }
 
@@ -29,6 +30,7 @@
     @include section; 
     h1{
         color: white;
+        -vendor-animation-delay: 2s;
     }
 }
 
@@ -38,6 +40,7 @@
     @include section;  
     h1{
         color: white;
+        -vendor-animation-delay: 2s;
     }
 }
 
@@ -47,6 +50,7 @@
     @include section; 
     h1{
         color: $orange;
+        -vendor-animation-delay: 2s;
     }
 }
 
@@ -55,14 +59,17 @@
     @include section; 
     h1{
         color: $dark;
+        -vendor-animation-delay: 2s;
     }
 }
 
 #section5{
     background: $dark;
+    overflow: hidden;
     @include section; 
     h1{
         color: white;
+        -vendor-animation-delay: 2s;
     }
 }
 

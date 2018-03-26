@@ -301,7 +301,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200; }
 
-p {
+p, .formLeft, .formRight {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300; }
 
@@ -309,13 +309,19 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
-#menu ul, #menu .joinButton {
+#menu ul, #menu .joinButton, .closeOverlay {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
+body, html {
+  overflow: hidden !important; }
+
 h1 {
   font-size: 3rem;
-  letter-spacing: 0.3rem; }
+  letter-spacing: 0.3rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
 
 h2 {
   color: #ee8a1e;
@@ -330,7 +336,8 @@ p {
   font-size: 0.88rem;
   letter-spacing: 0.07rem;
   line-height: 1.3rem;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 .content {
   display: grid;
@@ -338,13 +345,19 @@ p {
   grid-gap: 1rem; }
 
 .col-1 {
-  grid-column: span 1; }
+  grid-column: span 1;
+  min-width: 0;
+  min-height: 0; }
 
 .col-2 {
-  grid-column: span 2; }
+  grid-column: span 2;
+  min-width: 0;
+  min-height: 0; }
 
 .col-3 {
-  grid-column: span 3; }
+  grid-column: span 3;
+  min-width: 0;
+  min-height: 0; }
 
 #menu {
   background: #1f2833;
@@ -397,6 +410,39 @@ p {
     #menu .joinButton:hover {
       background: #a2b6c6; }
 
+.apisLogo {
+  position: absolute;
+  height: 60%;
+  left: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer; }
+  .apisLogo:hover {
+    opacity: 0.8; }
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  right: 100%;
+  position: absolute;
+  background: #7cbbce;
+  z-index: 1;
+  transition: right 0.5s; }
+
+.overlayOn {
+  right: 0 !important; }
+
+.closeOverlay {
+  top: 60px;
+  color: white;
+  right: 40px;
+  position: absolute;
+  cursor: pointer; }
+  .closeOverlay:hover {
+    color: #1f2833; }
+  .closeOverlay:active {
+    opacity: 0.7; }
+
 .section {
   position: relative; }
   .section .container {
@@ -413,7 +459,8 @@ p {
   background-position: center;
   background-position: bottom; }
   #section0 h1 {
-    color: #1f2833; }
+    color: #1f2833;
+    -vendor-animation-delay: 2s; }
 
 #section1 {
   background: #1f2833;
@@ -421,7 +468,8 @@ p {
   background-size: cover;
   background-position: center; }
   #section1 h1 {
-    color: white; }
+    color: white;
+    -vendor-animation-delay: 2s; }
 
 #section2 {
   background: #7cbbce;
@@ -429,7 +477,8 @@ p {
   background-size: cover;
   background-position: center; }
   #section2 h1 {
-    color: white; }
+    color: white;
+    -vendor-animation-delay: 2s; }
 
 #section3 {
   background: white;
@@ -437,21 +486,25 @@ p {
   background-size: cover;
   background-position: center; }
   #section3 h1 {
-    color: #ee8a1e; }
+    color: #ee8a1e;
+    -vendor-animation-delay: 2s; }
 
 #section4 {
   background: #a2b6c6;
   background-size: cover;
   background-position: center; }
   #section4 h1 {
-    color: #1f2833; }
+    color: #1f2833;
+    -vendor-animation-delay: 2s; }
 
 #section5 {
   background: #1f2833;
+  overflow: hidden;
   background-size: cover;
   background-position: center; }
   #section5 h1 {
-    color: white; }
+    color: white;
+    -vendor-animation-delay: 2s; }
 
 hr.titleLine {
   width: 3000px;
@@ -466,14 +519,64 @@ hr.titleLine {
 
 .staff {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem; }
 
 .staffBox {
   grid-column: span 1;
+  position: relative;
+  overflow: hidden;
   padding-bottom: 100%;
-  background: white;
+  background: #1f2833;
   border-radius: 0.3rem;
-  background-image: url("https://picsum.photos/g/300/300?image=433");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  cursor: pointer; }
+  .staffBox .staffPhoto {
+    border-style: none;
+    position: absolute;
+    width: 100%;
+    mix-blend-mode: screen;
+    filter: grayscale(100%);
+    z-index: 1; }
+    .staffBox .staffPhoto:hover {
+      mix-blend-mode: normal;
+      filter: grayscale(0); }
+
+#map {
+  width: 100%;
+  height: 100%; }
+
+.mapOverlay {
+  height: 240px;
+  width: 100%;
+  position: relative;
+  opacity: 0.9;
+  box-shadow: 0 0 0 3000px #1f2933;
+  border-radius: 4px;
+  pointer-events: none;
+  margin-bottom: 25px; }
+
+.formLeft, .formRight {
+  z-index: 1;
+  font-size: 0.9rem;
+  text-align: right; }
+  .formLeft button, .formRight button {
+    background: #7cbbce;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px; }
+  .formLeft textarea, .formRight textarea {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .formLeft input, .formRight input {
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; }

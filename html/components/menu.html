@@ -1,15 +1,21 @@
 <!-- menu.html -->
 <div id="menu">
+    <a href="#header"  onclick="closeOverlay()"><img class="apisLogo" src="/images/apisLogo.svg"></a>
     <ul>
-        <li data-menuanchor="what"><a href="#what">Who We Are</a></li>
+        <li data-menuanchor="what"><a href="#what" onclick="closeOverlay()">Who We Are</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="team"><a href="#team">What We Do</a></li>
+        <li data-menuanchor="team"><a href="#team" onclick="closeOverlay()">What We Do</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="about"><a href="#about">Why join us</a></li>
+        <li data-menuanchor="about"><a href="#about" onclick="closeOverlay()">Why join us</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="contact"><a href="#contact">news</a></li>
+        <li data-menuanchor="contact"><a href="#contact" onclick="closeOverlay()">news</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="footer"><a href="#footer">contact</a></li>
+        <li data-menuanchor="footer"><a href="#footer" onclick="closeOverlay()">contact</a></li>
     </ul>
-    <a class="joinButton">JOIN US</a>
+    <a class="joinButton" onclick="joinClick()">JOIN US</a>
+</div>
+
+
+<div class="overlay">
+    <h1 class="closeOverlay" onclick="joinClick()" >x</h1>
 </div>
