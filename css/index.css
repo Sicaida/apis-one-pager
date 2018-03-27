@@ -432,6 +432,10 @@ p {
 .overlayOn {
   right: 0 !important; }
 
+#overlayContent {
+  height: 100vh;
+  width: 100vw; }
+
 .closeOverlay {
   top: 60px;
   color: white;
