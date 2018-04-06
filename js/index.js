@@ -1,11 +1,13 @@
 var clicked = false; //start off with overlay off
 
 //Close overlay function
-function closeOverlay() {
+function closeOverlay(push) {
     if (clicked == true) {
         $('.overlay').removeClass('overlayOn');
         clicked = false;
-        history.back();
+        if (push == undefined){
+            history.back();
+        }
     }
 };
 
@@ -44,16 +46,6 @@ function staffClick(staff) {
 };
 
 
-//Close overlay function
-function closeOverlay() {
-    if (clicked == true) {
-        $('.overlay').removeClass('overlayOn');
-        clicked = false;
-        history.back();
-    }
-};
-
-
 //Use ESC button for closing overlay
 $(document).on('keydown', function (e) {
     if (e.keyCode === 27) { // ESC
@@ -68,10 +60,7 @@ jQuery(document).ready(function ($) {
     if (window.history && window.history.pushState) {
 
         $(window).on('popstate', function () {
-            if (clicked == true) { //need to avoid an extra history.back so using unique closeOverlay
-                $('.overlay').removeClass('overlayOn');
-                clicked = false;
-            }
+            closeOverlay(false);
         });
     }
 });
