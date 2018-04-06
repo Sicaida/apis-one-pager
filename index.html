@@ -24,7 +24,7 @@
             $('#fullpage').fullpage({
                 loopBottom: false,
 //                scrollBar:true,
-                anchors: ['header', 'what', 'team', 'about', 'contact', 'footer'],
+                anchors: ['header', 'whoweare', 'whatwedo', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
                 onLeave: function(index, nextIndex, direction){
 //                   leavingSection = $(this);
@@ -65,17 +65,17 @@
     
     <!-- menu.html -->
 <div id="menu">
-    <a data-menuanchor="header" href="#header"  onclick="closeOverlay()"><img class="apisLogo" src="/images/apisLogo.svg"></a>
+    <a data-menuanchor="header" href="#header"  onclick="closeOverlay(false)"><img class="apisLogo" src="/images/apisLogo.svg"></a>
     <ul>
-        <li data-menuanchor="what"><a href="#what" onclick="closeOverlay()">Who We Are</a></li>
+        <li data-menuanchor="who"><a href="#whoweare" onclick="closeOverlay(false)">Who We Are</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="team"><a href="#team" onclick="closeOverlay()">What We Do</a></li>
+        <li data-menuanchor="what"><a href="#whatwedo" onclick="closeOverlay(false)">What We Do</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="about"><a href="#about" onclick="closeOverlay()">Why join us</a></li>
+        <li data-menuanchor="joinus"><a href="#whyjoinus" onclick="closeOverlay(false)">Why join us</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="contact"><a href="#contact" onclick="closeOverlay()">news</a></li>
+        <li data-menuanchor="community"><a href="#community" onclick="closeOverlay(false)">community</a></li>
         <!--            <span>·</span>-->
-        <li data-menuanchor="footer"><a href="#footer" onclick="closeOverlay()">contact</a></li>
+        <li data-menuanchor="contact"><a href="#contact" onclick="closeOverlay(false)">contact</a></li>
     </ul>
     <a class="joinButton" onclick="joinClick('demo_test.html')">JOIN US</a>
 </div>
@@ -99,12 +99,14 @@
         
   
 <!-- whoWeAre.html -->
-   <div class="section" id="section1"><a href="#what"></a>
+   <div class="section" id="section1"><a href="#who"></a>
     <div class="container">
         <h1>Who We Are<hr class="titleLine">
         </h1>
         <div class="content">
-            <p class="col-3">Apis specialises in the business of government. Our primary purpose is to assist public service leaders in the effective delivery of government business. But we pride ourselves on bringing a lot more to the relationship.</p>
+            <p class="col-3">Apis is a Canberra based professional services firm specialising in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis, digital design, complex procurement and program evaluation and review.  We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.<br><br>
+                Our purpose is to become partners and trusted advisors to our clients; to inspire our people to achieve their best in interesting and challenging environments; and to be pragmatic and agile in meeting our clients’ challenges.
+            </p>
 <!--
             <div class="col-1" style="background: white"></div>
             <div class="col-2">
@@ -132,7 +134,7 @@
         
 
 <!-- whatWeDo.html -->
-   <div class="section" id="section2"><a href="#team"></a>
+   <div class="section" id="section2"><a href="#what"></a>
     <div class="container">
         <h1>What We Do
             <hr class="titleLine">
@@ -144,7 +146,7 @@
         
 
 <!-- whyJoinUs.html -->
-<div class="section" id="section3"><a href="#about"></a>
+<div class="section" id="section3"><a href="#joinus"></a>
     <div class="container">
         <h1>Why Join Us
             <hr class="titleLine">
@@ -156,17 +158,57 @@
         
   
 <!-- news.html -->
-   <div class="section" id="section4"><a href="#contact"></a>
+   <div class="section" id="section4"><a href="#community"></a>
     <div class="container">
-        <h1>News
+        <h1>Community
             <hr class="titleLine">
         </h1>
+        <div class="content">
+            <p class="col-3 black">Supporting the local community is a fundamental part of Apis’ business. The Apis in the Community Program allows us to make a significant contribution to community based programs, events and charities aimed at helping those in need. <br><br>
+                We do this through volunteer work, participation in community events and through fundraising. <br><br>
+                In 2017-18 Apis has selected Lifeline as our charity of choice.  We are involved in a range of fundraising and community events with Lifeline Canberra with our objective to assist Lifeline to fund the training of more volunteer crisis support staff to man their 24 hour phone service.<br><br>  
+                In addition we are supporting a range of other key charities, community events and organisations this year including: 
+
+            </p>
+            <!--
+<div class="col-1" style="background: white"></div>
+<div class="col-2">
+<h2>What's with the bull?</h2>
+<p>The Apis Bull’s origins are based on Apis, the bull god, symbolising prosperity and foresight and providing trusted guidance on issues of change.</p>
+</div>
+-->
+            <div class="col-3">
+                <div class="charity">
+                    <div class="charityBox" onclick="staffClick('shane')">
+<!--                    <img class="charityPhoto" src="/images/shane.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('dave')">
+<!--                    <img class="charityPhoto" src="/images/dave.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('hassan')">
+<!--                    <img class="charityPhoto" src="/images/hassan.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('mel')">
+<!--                    <img class="charityPhoto" src="/images/mel.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('tim')">
+<!--                    <img class="charityPhoto" src="/images/tim.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('pete')">
+<!--                    <img class="charityPhoto" src="/images/pete.jpg">-->
+                    </div>
+                    <div class="charityBox" onclick="staffClick('pete')">
+<!--                    <img class="charityPhoto" src="/images/pete.jpg">-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
        <div class="backgroundImage"></div>
 </div>
         <!-- contact.html -->
 <div class="section" id="section5">
-    <a href="#footer"></a>
+    <a href="#contact"></a>
 
     <!--       <div class="backgroundImage"></div>-->
 

@@ -339,6 +339,9 @@ p {
   margin: 0;
   position: relative; }
 
+.black {
+  color: #1f2833; }
+
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -544,6 +547,32 @@ hr.titleLine {
     filter: grayscale(100%);
     z-index: 1; }
     .staffBox .staffPhoto:hover {
+      mix-blend-mode: normal;
+      filter: grayscale(0); }
+
+.charity {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1rem; }
+
+.charityBox {
+  grid-column: span 1;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  background: #1f2833;
+  border-radius: 0.3rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .charityBox .charityPhoto {
+    border-style: none;
+    position: absolute;
+    width: 100%;
+    mix-blend-mode: screen;
+    filter: grayscale(100%);
+    z-index: 1; }
+    .charityBox .charityPhoto:hover {
       mix-blend-mode: normal;
       filter: grayscale(0); }
 

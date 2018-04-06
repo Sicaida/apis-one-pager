@@ -1,0 +1,33 @@
+.charity{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+}
+
+.charityBox{
+    grid-column: span 1;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    background: $dark;
+    border-radius: 0.3rem;
+//    background-image: url("https://picsum.photos/g/300/300?image=433");
+    background-size: cover; 
+    background-position:center; 
+    cursor: pointer;
+//    &:hover{
+//        background-image: url("https://picsum.photos/300/300?image=433");
+//    }
+    .charityPhoto{
+        border-style: none;
+        position: absolute;
+        width: 100%;
+        mix-blend-mode: screen;
+        filter: grayscale(100%);
+        z-index: 1;
+        &:hover{
+            mix-blend-mode: normal;
+            filter: grayscale(0);
+        }
+    }
+}
