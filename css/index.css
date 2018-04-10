@@ -297,19 +297,15 @@ template {
 [hidden] {
   display: none; }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200; }
-
 p, .formLeft, .formRight {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300; }
 
-h2 {
+h2, #section0 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
-#menu ul, #menu .joinButton, .closeOverlay {
+h1, #menu ul, #menu .joinButton, .closeOverlay {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
@@ -317,11 +313,13 @@ body, html {
   overflow: hidden !important; }
 
 h1 {
-  font-size: 3rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
   letter-spacing: 0.3rem;
   position: relative;
   z-index: 1;
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 80px; }
 
 h2 {
   color: #ee8a1e;
@@ -450,14 +448,18 @@ p {
   .closeOverlay:active {
     opacity: 0.7; }
 
+.fp-tableCell {
+  text-align: center; }
+
 .section {
   position: relative; }
   .section .container {
     max-width: 560px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle; }
+    .section .container .content {
+      will-change: transform, opacity; }
 
 #section0 {
   background-color: white;
@@ -466,8 +468,10 @@ p {
   background-position: center;
   background-position: bottom; }
   #section0 h1 {
-    color: #1f2833;
-    -vendor-animation-delay: 2s; }
+    color: #ee8a1e;
+    -vendor-animation-delay: 2s;
+    font-size: 2.8rem;
+    opacity: 0.8; }
 
 #section1 {
   background: #1f2833;
@@ -542,6 +546,7 @@ hr.titleLine {
   .staffBox .staffPhoto {
     border-style: none;
     position: absolute;
+    will-change: opacity;
     width: 100%;
     mix-blend-mode: screen;
     filter: grayscale(100%);
@@ -549,6 +554,21 @@ hr.titleLine {
     .staffBox .staffPhoto:hover {
       mix-blend-mode: normal;
       filter: grayscale(0); }
+
+.caseStudy {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.67);
+  margin-bottom: 10px;
+  border-radius: 5px; }
+
+.businessLine {
+  display: flex;
+  margin-bottom: 40px; }
+  .businessLine h2 {
+    flex: 1 1 0; }
+  .businessLine p {
+    flex: 2 2 0; }
 
 .charity {
   display: grid;
@@ -578,7 +598,10 @@ hr.titleLine {
 
 #map {
   width: 100%;
-  height: 100%; }
+  height: 120%;
+  position: absolute;
+  top: -130px;
+  left: 0; }
 
 .mapOverlay {
   height: 240px;
