@@ -5,11 +5,21 @@
 //    background-blend-mode: soft-light;
 }
 
+.fp-tableCell{
+    text-align: center;
+} 
+
 .section { //@extend %section;
     position: relative;
     .container{
         max-width: 560px;
-        @include centerer;
+//        @include centerer;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        .content{
+            will-change: transform, opacity;
+        }
     } 
 }
 
@@ -19,8 +29,11 @@
     @include section;
     background-position: bottom;
     h1{
-        color: $dark;
+        color: $orange;
         -vendor-animation-delay: 2s;
+        @extend %regular;
+        font-size: 2.8rem;
+        opacity: 0.8;
     }
 }
 

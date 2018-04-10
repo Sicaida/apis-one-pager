@@ -34,6 +34,7 @@
                     
                          if ($('#section1').hasClass("active") == true){
                             $("#section1 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+                             $("#section1 .container .content").find('> p, > div').addClass('animated fadeInUp');
                         }
                             else if ($('#section2').hasClass("active") == true){
                                 $("#section2 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
@@ -43,6 +44,7 @@
                             }
                             else if ($('#section4').hasClass("active") == true){
                                 $("#section4 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+                                $("#section4 .container .content").find('> p, > div').addClass('animated fadeIn');
                             }
                             else if ($('#section5').hasClass("active") == true){
                                 $("#section5 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');

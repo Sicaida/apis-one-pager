@@ -21,6 +21,7 @@
     .staffPhoto{
         border-style: none;
         position: absolute;
+        will-change: opacity;
         width: 100%;
         mix-blend-mode: screen;
         filter: grayscale(100%);

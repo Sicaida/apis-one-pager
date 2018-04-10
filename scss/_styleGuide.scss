@@ -3,12 +3,14 @@ body,html{
 }
 
 h1{
-    @extend %ultraLight;
-    font-size: 3rem;
+    @extend %semiBold;
+    text-transform: uppercase;
+    font-size: 3.5rem;
     letter-spacing: 0.3rem;
     position: relative;
     z-index: 1;
     display: inline-block;
+    margin-right: 80px;
 }
 
 h2{
