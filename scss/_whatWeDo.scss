@@ -1,18 +1,66 @@
+.caseStudies{
+    margin-top: 30px;
+    a{
+        text-decoration: none;
+        display: inline-block;
+        width: auto; 
+    }
+    h2{
+        color: white;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.88rem;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
 .caseStudy{
-    width: 100%;
-    height: 60px;
+//    width: 100%;
+//    padding: 10px;
+//    @extend %semiBold;
+//    color: $dark;
+//    text-align: center;
+//    background: rgba(255, 255, 255, 0.67);
+//    margin-bottom: 10px;
+//    border-radius: 5px;
+    
+    width: auto;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    @extend %semiBold;
+    color: $dark;
+    text-align: center;
     background: rgba(255, 255, 255, 0.67);
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 6px;
+    border-radius: 50px;
+    
+    &:hover{
+        background: rgba(255, 255, 255, 0.8);
+    }
 }
 
 .businessLine{
-    display: flex;
-    margin-bottom: 40px;
+    display: grid;
+//    grid-template-columns: 0.5fr 1fr 0.1fr;
+//    grid-gap: 1rem;
+    cursor: pointer;
+//    margin-bottom: 40px;
     h2{
         flex: 1 1 0;
+        grid-column: span 1;
+//        text-align: right;
+        color: white;
     }
     p{
         flex: 2 2 0;
+        grid-column: span 1;
+    }
+    &:hover{
+//        border-top: 1px solid $dark;
+        h2{
+            color: $orange;
+        }
     }
 }

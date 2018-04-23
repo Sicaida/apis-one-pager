@@ -42,7 +42,8 @@ p{
 }
 
 ul{
-
+    @extend p;
+    list-style: none;
 }
 
 li{
