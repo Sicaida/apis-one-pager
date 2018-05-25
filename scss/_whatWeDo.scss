@@ -1,6 +1,19 @@
 .caseStudies{
-    margin-top: 30px;
+//    margin-top: 30px;
     a{
+        text-decoration: none;
+        display: inline-block;
+        width: auto; 
+        .caseStudy{
+            background: rgba(255, 255, 255, 0.67);
+            color: $dark;
+            padding-left: 40px;
+            &:hover{
+                background: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+    span{
         text-decoration: none;
         display: inline-block;
         width: auto; 
@@ -11,7 +24,7 @@
         font-weight: 600;
         font-size: 0.88rem;
         text-transform: uppercase;
-        display: inline-block;
+//        display: inline-block;
         margin-right: 10px;
     }
 }
@@ -30,15 +43,19 @@
     font-size: 0.9rem;
     padding: 10px 20px;
     @extend %semiBold;
-    color: $dark;
+    color: white;
     text-align: center;
-    background: rgba(255, 255, 255, 0.67);
+//    background: rgba(255, 255, 255, 0.67);
     margin-bottom: 6px;
     border-radius: 50px;
-    
-    &:hover{
-        background: rgba(255, 255, 255, 0.8);
-    }
+    position: relative;
+    img{
+        position: absolute;
+        @include centererV;
+        left: 10px;
+        
+    }  
+  
 }
 
 .businessLine{
@@ -46,16 +63,30 @@
 //    grid-template-columns: 0.5fr 1fr 0.1fr;
 //    grid-gap: 1rem;
     cursor: pointer;
+    grid-template-columns: 1fr 3fr;
+    /* grid-gap: 2rem; */
+    padding-bottom: 20px;
 //    margin-bottom: 40px;
+    @media (max-width: 400px){
+        grid-gap:0.6rem;
+    }
     h2{
         flex: 1 1 0;
         grid-column: span 1;
 //        text-align: right;
         color: white;
+        @extend %semiBold;
+        font-size: 1rem;
+        text-transform: uppercase;
     }
     p{
         flex: 2 2 0;
         grid-column: span 1;
+    }
+    img{
+        @media (max-width:500px){
+            display: none;
+        }
     }
     &:hover{
 //        border-top: 1px solid $dark;

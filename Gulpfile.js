@@ -16,7 +16,7 @@ gulp.task('import', function () {
     gulp.src('html/index.html')
         .pipe(gulpImport('html/components/'))
         .pipe(gulp.dest('./')); 
-})
+});
  
 
 
@@ -34,9 +34,14 @@ gulp.task('default',function() {
     browserSync.init({
         server: {
             baseDir: "./"
-        }
+        },
+        ghostMode: false,
     });
     gulp.watch('scss/**/*.scss',['styles']);
     gulp.watch('html/**/*.html',['import']);
-    gulp.watch("./**/*.*", ['browser-sync']);
+    gulp.watch("html/**/*.html", ['browser-sync']);
+    gulp.watch("css/**/*.css", ['browser-sync']);
+    gulp.watch("js/**/*.js", ['browser-sync']);
+
+
 }); 

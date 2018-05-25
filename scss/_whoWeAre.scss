@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
+    @media (max-width:500px){
+//        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.5rem;
+    }
 }
 
 .staffBox{
@@ -30,5 +34,16 @@
             mix-blend-mode: normal;
             filter: grayscale(0);
         }
+    }
+}
+
+.staffClose{
+    color: white; 
+    text-align: right; 
+    right: 0; 
+    position: absolute;
+    cursor: pointer;
+    &:hover{
+        color: $orange;
     }
 }

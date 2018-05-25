@@ -9,6 +9,12 @@
     text-align: center;
 } 
 
+//@mixin responsiveSection{
+//    &.fp-responsive .fp-section,&.fp-responsive .fp-slide,&.fp-responsive .fp-tableCell{
+//    height: auto !important;
+//}
+//}
+
 .section { //@extend %section;
     position: relative;
     .container{
@@ -21,6 +27,9 @@
         .content{
             will-change: transform, opacity;
         }
+        @media (max-width:1000px){
+            width: 100%;
+        }
     } 
 }
 
@@ -29,6 +38,7 @@
     background-image: url("/images/hero2.png");
     @include section;
     background-position: bottom;
+    min-height: 100vh;
     h1{
         color: $orange;
         -vendor-animation-delay: 2s;
@@ -70,9 +80,10 @@
 
 #section4{
     background: $grey;
+    background-image: url("/images/community.png");
     @include section; 
     h1{
-        color: $dark;
+        color: white;
         -vendor-animation-delay: 2s;
     }
 }

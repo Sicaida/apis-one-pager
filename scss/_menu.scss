@@ -64,9 +64,27 @@
     }
 }
 
+.menuButton{
+    position: absolute;
+    width: 100px;
+    right: 1rem;
+    top: 0;
+    height: 100%;
+    @extend %semiBold;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.13rem;
+    cursor: pointer;
+}
+
 .apisLogo{
     position: absolute;
     height: 60%;
+    height: 43px;
     left: 15px;
     top: 50%;
     transform: translate(0, -50%);
@@ -74,5 +92,58 @@
     &:hover{
         opacity: 0.8;
     }
+}
+
+#mobileMenu{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    right: 100%;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    transition: right 0.5s;
+    ul {
+        @extend %semiBold;
+        width: 100%;
+        letter-spacing: 0.13rem;
+        color: #8d9aa3;
+        @include centerer;
+        text-align: center;
+        margin: 25px auto;
+        font-size: 0.85rem;
+        font-stretch: ultra-expanded;
+        text-transform: uppercase;
+
+        li {
+            list-style: none;
+            margin-bottom: 30px;
+
+            a {
+                color: #8d9aa3;
+                text-decoration: none;
+                vertical-align: sub;
+                &:hover {
+                    color: white;
+                    text-decoration: none;            
+                }
+            }
+            &.active a{
+                color: #ee8a1e;
+            }
+        }
+
+        span {
+            color: white;
+            font-size: 33px;
+            vertical-align: middle;
+            margin-top: -15px;
+            vertical-align: sub;
+        }
+    }
+}
+
+.mobileMenuOpen{
+    right: 0 !important;
 }
 

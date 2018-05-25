@@ -9,7 +9,7 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 100%;
-    background: $dark;
+//    background: $dark;
     border-radius: 0.3rem;
 //    background-image: url("https://picsum.photos/g/300/300?image=433");
     background-size: cover; 
@@ -22,12 +22,12 @@
         border-style: none;
         position: absolute;
         width: 100%;
-        mix-blend-mode: screen;
-        filter: grayscale(100%);
+//        mix-blend-mode: screen;
+//        filter: grayscale(100%);
         z-index: 1;
-        &:hover{
-            mix-blend-mode: normal;
-            filter: grayscale(0);
-        }
+//        &:hover{
+//            mix-blend-mode: normal;
+//            filter: grayscale(0);
+//        }
     }
 }

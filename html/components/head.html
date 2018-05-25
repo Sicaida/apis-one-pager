@@ -8,7 +8,7 @@
     <meta name="keywords" content="Apis Group" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/modules/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="/modules/animate.css" />
+<!--    <link rel="stylesheet" type="text/css" href="/modules/animate.css" />-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <!--    <script type="text/javascript" src="modules/scrolloverflow.js"></script>-->
@@ -23,7 +23,12 @@
 //                scrollBar:true,
                 anchors: ['header', 'whoweare', 'whatwedo', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
-                normalScrollElements: '.overlay',
+//                paddingTop: '73px',
+//                paddingBottom: '73px', 
+                responsiveWidth: 1000,
+                responsiveHeight: 500,
+
+                normalScrollElements: '.overlay *, .joinUsForm',
                 onLeave: function(index, nextIndex, direction){
 //                   leavingSection = $(this);
                     
