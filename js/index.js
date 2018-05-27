@@ -98,3 +98,33 @@ jQuery(document).ready(function ($) {
         });
     }
 });
+
+
+
+//randomise staff pick
+
+function randomNoRepeats(array) {
+    var copy = array.slice(0);
+    return function() {
+        if (copy.length < 1) { copy = array.slice(0); }
+        var index = Math.floor(Math.random() * copy.length);
+        var item = copy[index];
+        copy.splice(index, 1);
+        return item;
+    };
+}
+
+var chooser = randomNoRepeats(['annya', 'anthony', 'belinda', 'danaye', 'dave', 'hassan', 'john', 'lizzie', 'mel', 'mike', 'neil', 'nigel', 'pete', 'shane', 'simone', 'tim', 'virginia']);
+chooser();
+
+jQuery(document).ready(function ($) {
+    var staff = 6;
+    for(var i=0; i < staff; i++){
+        
+        var staffName =chooser();
+       
+        var content = "<div style='animation-delay: 0.6s' class='staffBox' onclick='staffClick(&quot;" +staffName + "&quot;)'><img class='staffPhoto' src='/images/" + staffName + ".jpg'></div>";
+        $(".staff").append(content);
+        console.log(content);
+    }
+});

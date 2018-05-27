@@ -297,11 +297,11 @@ template {
 [hidden] {
   display: none; }
 
-p, ul, .formLeft, .formRight {
+p, ul, .joinUsForm form textarea, .joinUsForm form input, .formLeft, .formRight {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300; }
 
-#section0 h1, .joinUsForm p, .joinUsForm ul, .joinUsForm form {
+#section0 h1, .joinUsForm p, .joinUsForm ul, .joinUsForm form textarea, .joinUsForm form input, .joinUsForm form {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
@@ -330,7 +330,7 @@ h2 {
   margin: 0;
   margin-bottom: 0.5rem; }
 
-p, ul {
+p, ul, .joinUsForm form textarea, .joinUsForm form input {
   color: white;
   font-size: 0.78rem;
   letter-spacing: 0.07rem;
@@ -374,6 +374,11 @@ ul {
   position: absolute;
   opacity: 0;
   pointer-events: none; }
+
+.joinUsLinks {
+  cursor: pointer; }
+  .joinUsLinks:hover {
+    color: #ee8a1e; }
 
 #menu {
   background: #1f2833;
@@ -666,7 +671,7 @@ hr.titleLine {
   cursor: pointer;
   grid-template-columns: 1fr 3fr;
   /* grid-gap: 2rem; */
-  padding-bottom: 20px; }
+  padding-top: 20px; }
   @media (max-width: 400px) {
     .businessLine {
       grid-gap: 0.6rem; } }
@@ -676,7 +681,7 @@ hr.titleLine {
     color: white;
     font-size: 1rem;
     text-transform: uppercase; }
-  .businessLine p, .businessLine ul {
+  .businessLine p, .businessLine ul, .businessLine .joinUsForm form textarea, .joinUsForm form .businessLine textarea, .businessLine .joinUsForm form input, .joinUsForm form .businessLine input {
     flex: 2 2 0;
     grid-column: span 1; }
   @media (max-width: 500px) {
@@ -762,7 +767,6 @@ hr.titleLine {
   width: 100vw;
   right: 0;
   opacity: 0;
-  overflow: scroll;
   position: fixed;
   background: white;
   z-index: 1;
@@ -797,17 +801,26 @@ hr.titleLine {
   .closeOverlay:active {
     opacity: 0.7; }
 
+@media (max-width: 1250px) {
+  .joinUsText {
+    max-width: 400px; } }
+
 .joinUsForm {
   overflow-y: scroll;
-  max-height: 80vh;
-  margin-top: 68px;
-  background: #e2e2e2;
-  border-radius: 5px;
-  padding: 0 10px;
-  border: #e2e2e2 6px solid;
-  border-top: #e2e2e2 solid 16px;
-  border-bottom: #e2e2e2 solid 16px; }
-  .joinUsForm p, .joinUsForm ul {
+  right: 0;
+  top: 0;
+  background: #ffffff; }
+  @media (min-width: 800px) {
+    .joinUsForm {
+      width: 50vw;
+      height: 90vh;
+      max-width: 50vw !important;
+      position: absolute !important;
+      padding: 30px 10px;
+      padding-top: 100px; } }
+  .joinUsForm .content {
+    max-width: 560px; }
+  .joinUsForm p, .joinUsForm ul, .joinUsForm form textarea, .joinUsForm form input {
     color: #1f2833; }
   .joinUsForm form .formSection {
     padding: 10px;
@@ -822,7 +835,7 @@ hr.titleLine {
     padding: 5px 10px; }
   .joinUsForm form textarea {
     border: none;
-    background: #a2b6c6;
+    background: #a2b6c666;
     height: 100%;
     width: 100%;
     padding: 5px 10px;
@@ -830,30 +843,35 @@ hr.titleLine {
     box-sizing: border-box; }
   .joinUsForm form input {
     border: none;
-    margin-bottom: 10px;
+    margin-top: 11px;
     padding: 5px 10px;
-    border-bottom: 2px solid #c5c5c5;
+    border-bottom: 2px solid #f3f3f3;
     box-sizing: border-box; }
     .joinUsForm form input:focus {
-      border-bottom: 2px solid #ee8a1e;
+      border-bottom: 2px solid #ffcf9c;
       outline: none; }
+  .joinUsForm form .inputTitle {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: text-bottom; }
   .joinUsForm form .input-md {
     width: 100%; }
+  .joinUsForm form .ifYes {
+    width: auto;
+    margin-top: 0; }
 
 /*
 *  STYLE 2
 */
 #style-2::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #a2b6c6; }
+  background-color: #a2b6c666; }
 
 #style-2::-webkit-scrollbar {
-  width: 8px;
-  background-color: #e2e2e2; }
+  width: 12px;
+  background-color: #a2b6c666; }
 
 #style-2::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #1f2833; }
+  background-color: #a2b6c6; }
 
 .staffInfo {
   display: grid;
@@ -862,10 +880,13 @@ hr.titleLine {
   .staffInfo .staffPhoto {
     width: 100%;
     border-radius: 5px; }
+    @media (max-width: 500px) {
+      .staffInfo .staffPhoto {
+        display: none; } }
 
 @media (max-width: 1600px) {
   #menu ul {
-    width: 60%; }
+    width: 69%; }
   #menu .joinButton {
     width: 150px; } }
 

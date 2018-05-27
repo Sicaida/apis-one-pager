@@ -24,46 +24,46 @@
             $('#fullpage').fullpage({
                 loopBottom: false,
 //                scrollBar:true,
-                anchors: ['header', 'whoweare', 'whatwedo', 'whyjoinus', 'community', 'contact'],
+                anchors: ['header', 'whoweare', 'whatwedo', 'whowesupport', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
 //                paddingTop: '73px',
 //                paddingBottom: '73px', 
                 responsiveWidth: 1000,
-                responsiveHeight: 500,
+                responsiveHeight: 500, 
 
-                normalScrollElements: '.overlay *, .joinUsForm',
-                onLeave: function(index, nextIndex, direction){
-//                   leavingSection = $(this);
-                    
-//                   
-//                    else if(index == 2 && direction == 'up'){
-//                        alert("Going to section 1!");
-//                    }
-                    setTimeout(function() {
-                    
-                         if ($('#section1').hasClass("active") == true){
-                            $("#section1 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-                             $("#section1 .container .content").find('> p, > div').addClass('animated fadeInUp');
-                        }
-                            else if ($('#section2').hasClass("active") == true){
-                                $("#section2 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-                            }
-                            else if ($('#section3').hasClass("active") == true){
-                                $("#section3 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-                            }
-                            else if ($('#section4').hasClass("active") == true){
-                                $("#section4 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-                                $("#section4 .container .content").find('> p, > div').addClass('animated fadeIn');
-                            }
-                            else if ($('#section5').hasClass("active") == true){
-                                $("#section5 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-                            }
-                    
-                    }, 10);
-                    
-                       
-                    
-                }
+                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
+//                onLeave: function(index, nextIndex, direction){
+////                   leavingSection = $(this);
+//                    
+////                   
+////                    else if(index == 2 && direction == 'up'){
+////                        alert("Going to section 1!");
+////                    }
+//                    setTimeout(function() {
+//                    
+//                         if ($('#section1').hasClass("active") == true){
+//                            $("#section1 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+//                             $("#section1 .container .content").find('> p, > div').addClass('animated fadeInUp');
+//                        }
+//                            else if ($('#section2').hasClass("active") == true){
+//                                $("#section2 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+//                            }
+//                            else if ($('#section3').hasClass("active") == true){
+//                                $("#section3 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+//                            }
+//                            else if ($('#section4').hasClass("active") == true){
+//                                $("#section4 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+//                                $("#section4 .container .content").find('> p, > div').addClass('animated fadeIn');
+//                            }
+//                            else if ($('#section5').hasClass("active") == true){
+//                                $("#section5 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
+//                            }
+//                    
+//                    }, 10);
+//                    
+//                       
+//                    
+//                }
             });
         });
     </script>
@@ -78,6 +78,7 @@
         <li data-menuanchor="whoweare"><a href="#whoweare" onclick="closeOverlay(false)">Who We Are</a></li>
         <!--            <span>·</span>-->
         <li data-menuanchor="whatwedo"><a href="#whatwedo" onclick="closeOverlay(false)">What We Do</a></li>
+        <li data-menuanchor="whowesupport"><a href="#whowesupport" onclick="closeOverlay(false)">who we help</a></li>
         <!--            <span>·</span>-->
         <li data-menuanchor="whyjoinus"><a href="#whyjoinus" onclick="closeOverlay(false)">Why join us</a></li>
         <!--            <span>·</span>-->
@@ -129,21 +130,29 @@
     <div class="container">
 <!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
         <div class="content" >
-            <div id="whoWeAreContent"  class="col-3"><p style="animation-delay: 0.4s">Apis is a Canberra based professional services firm specialising in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis, digital design, complex procurement and program evaluation and review.  We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p>
-                <br><p style="animation-delay: 0.45s"  class="col-3">
-                Our purpose is to become partners and trusted advisors to our clients; to inspire our people to achieve their best in interesting and challenging environments; and to be pragmatic and agile in meeting our clients’ challenges.
+            <div id="whoWeAreContent"  class="col-3"><p style="animation-delay: 0.4s">Apis specialises in the Business of government. Our primary purpose is to assist public service leaders in the effective delivery of government business. But we pride ourselves on brining a lot more to the relationship. We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p>
+                <br><h2 style="color: white; font-size: 0.9rem; margin-bottom: 0;">What's with the bull?</h2>
+                <p style="animation-delay: 0.45s"  class="col-3">
+                The Apis Bull has been with us since our foundation in 1999. It is synonymous with our name – its origins were based on Apis, the bull god, symbolising prosperity and foresight and providing trusted guidance on issues of change.
                 </p></div>
             
             
             <div style="animation-delay: 0.5s" class="col-3">
                 <h2 >A few of our People</h2>
                 <div class="staff">
+                    
+                    
+                    
+                    
+<!--
+                    
                     <div style="animation-delay: 0.6s" class="staffBox" onclick="staffClick('shane')"><img class="staffPhoto" src="/images/shane.jpg"></div>
                     <div style="animation-delay: 0.7s" class="staffBox" onclick="staffClick('dave')"><img class="staffPhoto" src="/images/dave.jpg"></div>
                     <div style="animation-delay: 0.8s" class="staffBox" onclick="staffClick('hassan')"><img class="staffPhoto" src="/images/hassan.jpg"></div>
                     <div style="animation-delay: 0.9s" class="staffBox" onclick="staffClick('mel')"><img class="staffPhoto" src="/images/mel.jpg"></div>
                     <div style="animation-delay: 1s" class="staffBox" onclick="staffClick('tim')"><img class="staffPhoto" src="/images/tim.jpg"></div>
                     <div style="animation-delay: 1.1s" class="staffBox" onclick="staffClick('pete')"><img class="staffPhoto" src="/images/pete.jpg"></div>
+-->
 <!--                    <div class="staffBox" onclick="joinClick()"><img class="staffPhoto" src="/images/shane.jpg"></div>-->
                 </div>
             </div>
@@ -162,6 +171,7 @@
     <div class="container">
         <!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
         <div class="content">
+            <p class="col-3">Apis specialises in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis and design, digital design, change and transformation, complex procurement and program evaluation and review.</p>
             <div class="businessLines col-3">
                 <div class="businessLine" onclick="joinClick('advisory.html')">
                     <!--                <img src="/images/advisory.svg" width="50px">-->
@@ -184,31 +194,41 @@
                     <p style="font-size: 0.78rem">Planning, management, delivery and assurance of complex policy reform initiatives.</p>
                 </div>
             </div>
+</div>
+</div>
+<div class="backgroundImage"></div>
+
+</div>
+        <!-- whatWeDo.html -->
+<div class="section fp-auto-height-responsive" id="section2">
+    <a href="#support"></a>
+    <div class="container">
+        <h1 style="margin-right: 60px;">Who We help
+        </h1>
+    </div>
+    <div class="container">
+        <!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
+        <div class="content">
+            <p class="col-3">We offer services to public and private sector organisations, from the smallest to the largest. Within government, we have supported policy departments, service delivery agencies, regulators and central agencies, across multiple sectors.</p>
+           
 
             <div class="caseStudies col-3">
-                <h2>CLIENTS</h2>
+                <h2>OUR CLIENTS INCLUDE:</h2>
                 <a style="text-decoration:none;" target="_blank" href="/caseStudies/DSS_caseStudy.pdf">
                     <div class="caseStudy"><span><img src="/images/pdf-file.svg" height="20px">  DSS</span></div>
                 </a>
                 <a style="text-decoration:none;" target="_blank" href="/caseStudies/HeadToHealth_businessCase.pdf">
                     <div class="caseStudy"><img src="/images/pdf-file.svg" height="20px">Head to Health</div>
                 </a>
-                <span><div class="caseStudy"><span>DHS</span></div>
+                <span><div class="caseStudy"><span>Department of Human Services</span></div>
                 </span>
-                <span><div class="caseStudy"><span>DOH</span></div>
+                <span><div class="caseStudy"><span>Department of Health</span></div>
                 </span>
-                <span><div class="caseStudy"><span>DOEM</span></div>
+                <span><div class="caseStudy"><span>Department of Jobs and Small Business</span></div>
                 </span>
-                <span><div class="caseStudy"><span>DOE</span></div>
+                <span><div class="caseStudy"><span>Department of Environment</span></div>
                 </span>
-                <span><div class="caseStudy"><span>NDIA</span></div>
-                </span>
-                <span><div class="caseStudy"><span>AIATSIS</span></div>
-                </span>
-                <span><div class="caseStudy"><span>ANU</span></div>
-                </span>
-                <span> <div class="caseStudy"><span>My Aged Care</span></div>
-                </span>
+                
 
 </div>
 </div>
@@ -227,21 +247,12 @@
 <!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
         <div class="content">
             <p class="col-3 black">Our mission is to inspire innovation and build trust, to deliver reform and transformation and make a positive difference in our clients, our people and our community’s future.
-                <br><br>When you join us you’ll see a difference-in the work you do, in our approach to developing you, and in the way we help you balance your professional and personal goals.
-                <br><br>
             </p>
-            <h2 class="col-3 black">Our value proposition is a unique one:</h2>
-            <p class="col-3 black">Interesting work</p>
-           
+            <p class="joinUsLinks col-3 black" onclick="joinClick('joinUs.html')">We have interesting work...</p>
+            <p class="joinUsLinks col-3 black" onclick="joinClick('joinUs.html')">We develop your career...</p>
+            <p class="joinUsLinks col-3 black" onclick="joinClick('joinUs.html')">We are about more than just work...</p>
+            <p class="joinUsLinks col-3 black" onclick="joinClick('joinUs.html')">We have exceptional people...</p>
 
-            <p class="col-3 black">Developing your career</p>
-           
-            <p class="col-3 black">We are about more than just work</p>
-            
-            <p class="col-3 black">Exceptional People</p>
-            <br>
-            
-            <p class="col-3 black">If you are an adaptable and accountable individual who enjoys finding and influencing solutions to problems of national significance we’d like to hear from you. Contact our Recruitment Lead at: <strong>(02) 6206 000</strong> or <strong>recruitment@apisgroup.com.au</strong></p>
         </div>
     </div>
     <div class="backgroundImage"></div>
@@ -257,10 +268,7 @@
     <div class="container">
         <!--          <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
         <div class="content">
-            <p style="animation-delay: 0.35s" class="col-3 black">Supporting the local community is a fundamental part of Apis’ business. The Apis in the Community Program allows us to make a significant contribution to community based programs, events and charities aimed at helping those in need.
-            </p>
-            <p style="animation-delay: 0.4s" class="col-3 black">
-                We do this through volunteer work, participation in community events and through fundraising.
+            <p style="animation-delay: 0.35s" class="col-3 black">Supporting the local community is a fundamental part of Apis’ business. The Apis in the Community Program allows us to make a significant contribution to community based programs, events and charities aimed at helping those in need. We do this through volunteer work, participation in community events and through fundraising.
             </p>
         </div>
         <div class="content" style="padding: 10px; margin-top: 30px; border-radius:6px;     background: rgba(255, 255, 255, 0.21);  padding: 10px;  margin-top: 30px;   border-radius: 6px; grid-template-columns: 1fr 3fr ">
@@ -271,11 +279,10 @@
             </div>
             
             <p style="animation-delay: 0.45s" class="col-2 black">
-                In 2017-18 Apis has selected Lifeline as our charity of choice. We are involved in a range of fundraising and community events with <strong>Lifeline Canberra</strong> with our objective to assist Lifeline to fund the training of more volunteer crisis support staff to man their 24 hour phone service.
+                In 2017-18 Apis has selected Lifeline as our charity of choice. We are involved in a range of fundraising and community events with Lifeline Canberra with our objective to assist Lifeline to fund the training of more volunteer crisis support staff to man their 24 hour phone service.
             </p>
             <p style="animation-delay: 0.5s" class="col-3 black">
-                In addition we are supporting a range of other key charities, community events and organisations this year including:
-
+                In addition we are supporting a range of other key charities, community events and organisations this year including
             </p>
 
             <div style="animation-delay: .55s" class="col-3">

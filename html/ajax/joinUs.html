@@ -6,39 +6,19 @@
     }
 </style>
 -->
-<div class="fp-tableCell">
-    <div class="container" style="text-align: right; margin-right: 80px;">
+<div class="fp-tableCell" id="joinUs" style="background: #a2b6c666">
+    <div class="container" style="text-align: right; transform: translateX(-50%);
+                                  margin-right: 110px;">
         <h1 style="margin-right: 0" class="black">Join Us
         </h1>
-        <p class="col-3 black" style="text-align: justify; direction:rtl;">
-            Thanks for your interest in joining Apis Group. Our people are critical to the success of our business and we invest significantly in our recruitment process so it’s a smooth and transparent experience for you as well as ensuring we fully understand your requirements and whether there is an alignment to our core services and shared behaviours. </p><br>
-        <p class="col-3 black" style="text-align: justify; direction:rtl;"> To help us ensure we have all your relevant details to stay in contact and assess your fit can you please complete the application form below and return it to the Recruitment Lead at your earliest convenience. We can’t start the recruitment process without your application form so if you have any questions or concerns please get in touch and we are happy to discuss further. </p><br>
-        <p class="col-3 black" style="text-align: justify; direction:rtl;">Thanks again and we look forward to working with you. </p>
-        
-        <div class="content">
-            <p class="col-3 black">
-                <br><br>Our value proposition is a unique one:
-            </p>
-            <h2 class="col-3">Interesting work</h2>
-            <p class="col-3 black">Can you help us set up a digital tool to support carbon emissions reduction? 
-                How do we deliver a digital information hub and national contact centre to enable clients a better way to access aged care services? 
-                Can you help us to deliver one of the world’s largest social welfare ICT system transformations? 
-                What document management system should I use if I need to process 3000 grant applications every year? 
-                Can you design a framework that reduces red tape for not-for-profit organisations? </p>
-
-            <h2 class="col-3">Developing your career</h2>
-            <p class="col-3 black"> Our aim is to develop well rounded consultants able to tackle a range of problems and deliver outstanding product. We achieve this by providing you the opportunity to work on complex programs of national significance while working alongside our Partners and with teams of talented individuals. We make a significant investment in our professional development program and offer you opportunities to undertake cutting edge certifications, attend monthly professional development breakfasts and work through our Leadership and Consulting programs. </p>
-            <h2 class="col-3">We are about more than just work</h2>
-            <p class="col-3 black"> We are highly active corporate citizens-we invest in local and international initiatives that our staff help select. We're a local business committed to also making a positive impact on our community’s future. We all work hard but know that balance is important so we work with you to ensure you have the flexibility you need to make it all work. Celebrating our success is key so we have an active social calendar including our annual conference, quarterly social events and monthly breakfasts. </p>
-            <h2 class="col-3">Exceptional People</h2>
-            <p class="col-3 black">We offer the opportunity to work with and alongside leading practitioners from a wide range of backgrounds. Our people are a group of smart creative, energised individuals who want to try new things. It makes for an environment that you want to be a part of. Our core values are active and can be seen in the way our people operate. Our culture encourages collaboration and innovation-we want your input to make our business even better. </p>
-
-            <p class="col-3 black">If you are an adaptable and accountable individual who enjoys finding and influencing solutions to problems of national significance we’d like to hear from you. Contact our Recruitment Lead at: (02) 6206 000 or recruitment@apisgroup.com.au  or have a look at our current opportunities:</p>
-        </div>
+        <p class="joinUsText col-3 black" style="text-align: justify; direction:rtl;">
+            Thanks for your interest in joining Apis Group. Our people are critical to the success of our business and we invest significantly in our recruitment process so it’s a smooth and transparent experience for you as well as ensuring we fully understand your requirements and whether there is an alignment to our core services and shared behaviours. 
+            <br><br>To allow us to assess your fit and stay in touch please complete the application form below. If you have any questions or concerns please get in touch and we will be happy to help you. <br><br>
+            Thanks again and we look forward to working with you.</p>
     </div>
 
     <div class="container joinUsForm" id="style-2">
-        <div class="content">
+        <div class="content"><!--id="style-2" for side scrollbar thing-->
             <form class="col-3 black">
                 <div class="formSection"><h2>Contact Details</h2>
                 <input id="textinput" name="name" type="text" placeholder="Name" class="form-control input-md">
@@ -47,55 +27,75 @@
                 <input id="textinput" name="email" type="text" placeholder="Email" class="form-control input-md">
                 </div>
                 
-                <div class="formSection">
-                <h2>Relevant Experience</h2>
-                <p>Experience aligned to Apis core services:</p>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Business and Digital Design <br>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Business Analysis <br>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Change Management <br>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Evaluation and Review <br>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Strategic advice <br>
-                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Program/Project Management <br> <br>
-                
-                <p>Experience across Australian Federal or State Government:</p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <br> <br>
-                <p>Experience in consulting:</p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <br> <br>
-                <textarea class="form-control" id="textarea" placeholder="Relevant Tertiary Qualifications" name="query"></textarea>
-                <br> <br></div>
-               
-                <div class="formSection"><h2>Eligibility for work:</h2>
-                <input id="textinput" name="recidencyStatus" type="text" placeholder="Residency Status" class="form-control input-md">
-                <br> <br>
-                <p>To ensure that we can provide you with a safe work environment do you have any requirements to support you to do your job?</p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="form-control input-md">
-                <br> <br>
-                <p>Do you have or have you had any injury or illness that would prevent you from undertaking any tasks associated with the role? </p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="form-control input-md">
-                <br> <br>
-                <p>Due to the nature of the work we do-working with Australian Federal Government-it is a requirement of the role to have the ability to obtain baseline security clearance. Is there anything preventing you from obtaining this? </p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="form-control input-md">
-                <br> <br>
-                <p>Do you have any commercial interests that may impact your ability to carry out the role you have applied for taking into consideration any impacts on your availability to work the hours specified or would pose any conflict of interest? </p>
-                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Yes
-                <input type="radio" name="radios" id="radios-1" value="2"> No
-                <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="form-control input-md">
-                <br> <br></div>
-                <div class="formSection"> <p>By ticking the box below you confirm that all the details provided in the application form and in your resume are accurate and that you have the right to work in Australia.</p><input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                <br> <br>
-                <p>By ticking the box below you are consenting to the collection and storage of your details as a part of the recruitment process and for any future opportunities. </p><input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"></div>
+<div class="formSection">
+    <h2>Relevant Experience</h2>
+    <p>Experience aligned to Apis core services:</p>
+    <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+    <p class="inputTitle">Business and Digital Design</p> <br>
+    <input type="checkbox" name="checkboxes" id="checkboxes-1" value="1">
+    <p class="inputTitle">Business Analysis</p> <br>
+    <input type="checkbox" name="checkboxes" id="checkboxes-2" value="1">
+    <p class="inputTitle">Change Management </p> <br>
+    <input type="checkbox" name="checkboxes" id="checkboxes-3" value="1">
+    <p class="inputTitle">Evaluation and Review </p> <br>
+    <input type="checkbox" name="checkboxes" id="checkboxes-4" value="1">
+    <p class="inputTitle">Strategic advice</p> <br>
+    <input type="checkbox" name="checkboxes" id="checkboxes-5" value="1">
+    <p class="inputTitle">Program/Project Management </p> <br><br>
 
-            </form>
+    <p>Experience across Australian Federal or State Government:</p>
+    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios" id="radios-1" value="2">
+    <p class="inputTitle">No</p>
+    <br><br>
+    <p>Experience in consulting:</p>
+    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios" id="radios-1" value="2">
+    <p class="inputTitle">No</p>
+    <br><br>
+    <textarea class="form-control" id="textarea" placeholder="Relevant Tertiary Qualifications" name="query"></textarea>
+    </div>
+
+<div class="formSection">
+    <h2>Eligibility for work:</h2>
+    <input id="textinput" name="recidencyStatus" type="text" placeholder="Residency Status" class="form-control input-md">
+    <br><br><br>
+    <p>To ensure that we can provide you with a safe work environment do you have any requirements to support you to do your job?</p>
+    <input type="radio" name="radios" id="radios-0" value="1">
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios" id="radios-1" value="2">
+    <p class="inputTitle">No</p>
+    <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="ifYes form-control input-md">
+    <br><br><br>
+    <p>Do you have or have you had any injury or illness that would prevent you from undertaking any tasks associated with the role? </p>
+    <input type="radio" name="radios2" id="radios-2" value="1" >
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios2" id="radios-3" value="2">
+    <p class="inputTitle">No</p>
+    <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="ifYes form-control input-md">
+    <br><br><br>
+    <p>Due to the nature of the work we do-working with Australian Federal Government-it is a requirement of the role to have the ability to obtain baseline security clearance. Is there anything preventing you from obtaining this? </p>
+    <input type="radio" name="radios3" id="radios-5" value="1" >
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios3" id="radios-6" value="2">
+    <p class="inputTitle">No</p>
+    <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="ifYes form-control input-md">
+    <br><br><br>
+    <p>Do you have any commercial interests that may impact your ability to carry out the role you have applied for taking into consideration any impacts on your availability to work the hours specified or would pose any conflict of interest? </p>
+    <input type="radio" name="radios4" id="radios-7" value="1" >
+    <p class="inputTitle">Yes</p>
+    <input type="radio" name="radios4" id="radios-8" value="2">
+    <p class="inputTitle">No</p>
+    <input id="textinput" name="name" type="text" placeholder="if Yes please specify" class="ifYes form-control input-md">
+    <br></div>
+<div class="formSection">
+    <input type="checkbox" name="checkboxes2" id="checkboxes-6" value="1"><p style=" display: inline; vertical-align:  text-bottom; padding-left: 8px; ">By ticking this box you confirm that all the details provided in the application form and in your resume are accurate and that you have the right to work in Australia.</p>
+    <br><br>
+    <input type="checkbox" name="checkboxes3" id="checkboxes-7" value="1"><p  style=" display: inline; vertical-align:  text-bottom; padding-left: 8px; ">By ticking this box you are consenting to the collection and storage of your details as a part of the recruitment process and for any future opportunities. </p><br><br><button><p>Submit</p></button><br><br></div>
+                
+</form>
         </div>
     </div>
     <div class="backgroundImage" style="background: white"></div>
