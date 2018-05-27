@@ -297,11 +297,11 @@ template {
 [hidden] {
   display: none; }
 
-p, ul, .joinUsForm form textarea, .joinUsForm form input, .formLeft, .formRight {
+.formLeft, .formRight {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300; }
 
-#section0 h1, .joinUsForm p, .joinUsForm ul, .joinUsForm form textarea, .joinUsForm form input, .joinUsForm form {
+p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input, #section0 h1, .joinUsForm ul, .joinUsForm form {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
@@ -330,7 +330,7 @@ h2 {
   margin: 0;
   margin-bottom: 0.5rem; }
 
-p, ul, .joinUsForm form textarea, .joinUsForm form input {
+p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input {
   color: white;
   font-size: 0.78rem;
   letter-spacing: 0.07rem;
@@ -386,7 +386,7 @@ ul {
   width: 100%;
   z-index: 100; }
   #menu ul {
-    width: 40%;
+    width: 50%;
     letter-spacing: 0.13rem;
     color: #8d9aa3;
     display: flex;
@@ -810,17 +810,7 @@ hr.titleLine {
   right: 0;
   top: 0;
   background: #ffffff; }
-  @media (min-width: 800px) {
-    .joinUsForm {
-      width: 50vw;
-      height: 90vh;
-      max-width: 50vw !important;
-      position: absolute !important;
-      padding: 30px 10px;
-      padding-top: 100px; } }
-  .joinUsForm .content {
-    max-width: 560px; }
-  .joinUsForm p, .joinUsForm ul, .joinUsForm form textarea, .joinUsForm form input {
+  .joinUsForm ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input {
     color: #1f2833; }
   .joinUsForm form .formSection {
     padding: 10px;
@@ -837,13 +827,15 @@ hr.titleLine {
     border: none;
     background: #a2b6c666;
     height: 100%;
+    color: #1f2833;
     width: 100%;
     padding: 5px 10px;
     border-radius: 4px;
     box-sizing: border-box; }
   .joinUsForm form input {
     border: none;
-    margin-top: 11px;
+    color: #1f2833;
+    margin-bottom: 11px;
     padding: 5px 10px;
     border-bottom: 2px solid #f3f3f3;
     box-sizing: border-box; }
@@ -859,6 +851,16 @@ hr.titleLine {
   .joinUsForm form .ifYes {
     width: auto;
     margin-top: 0; }
+  .joinUsForm .content {
+    max-width: 560px; }
+  @media (min-width: 800px) {
+    .joinUsForm {
+      width: 50vw;
+      height: 90vh;
+      max-width: 50vw !important;
+      position: absolute !important;
+      padding: 30px 10px;
+      padding-top: 100px; } }
 
 /*
 *  STYLE 2

@@ -16,7 +16,7 @@
     width: 100vw;
     right: 0;
     opacity: 0;
-    overflow: scroll;
+//    overflow: scroll;
     position: fixed;
     background: white;
     z-index: 1;
@@ -66,21 +66,19 @@
     }
 }
 
+@media (max-width: 1250px) { 
+    .joinUsText { 
+        max-width: 400px; } } 
 
 .joinUsForm{
     overflow-y: scroll;
-    max-height: 80vh;
-    margin-top: 68px;
-    background: #e2e2e2;
-    border-radius: 5px;
-//    padding: 20px;
-    padding: 0 10px;
-    border: #e2e2e2 6px solid;
-    border-top: #e2e2e2 solid 16px;
-    border-bottom: #e2e2e2 solid 16px;
+    right: 0; 
+    top: 0; 
+    background: #ffffff; 
     p{
         color: $dark;
         @extend %regular;
+        @extend p;
     }
     form{
         @extend %regular;
@@ -99,8 +97,10 @@
         }
         textarea{
             border: none;
-            background: $grey;
+            background: #a2b6c666;
             height: 100%;
+            color: $dark;
+            @extend p;
             width: 100%;
             padding: 5px 10px;
             border-radius: 4px;
@@ -108,20 +108,40 @@
         }
         input{
             border: none;
-            margin-bottom: 10px;
+            @extend p;
+            color: $dark;
+            margin-bottom: 11px;
             padding: 5px 10px;
-            border-bottom: 2px solid #c5c5c5;
+            border-bottom: 2px solid #f3f3f3;
 //            width: 100%;
             box-sizing: border-box;
             &:focus{
-                border-bottom: 2px solid $orange;
+                border-bottom: 2px solid #ffcf9c;
                 outline: none;
             }
         }
+        .inputTitle { 
+            display: inline-block; 
+            margin-right: 20px; 
+            vertical-align: text-bottom; } 
         .input-md{
             width: 100%;
         }
+        .ifYes { 
+            width: auto; 
+            margin-top: 0; } 
+        
     }
+    .content{
+        max-width: 560px;
+    }
+@media (min-width: 800px) {  
+        width: 50vw; 
+        height: 90vh; 
+        max-width: 50vw !important; 
+        position: absolute !important; 
+        padding: 30px 10px; 
+        padding-top: 100px; } 
 }
 
 /*
@@ -130,20 +150,19 @@
 
 #style-2::-webkit-scrollbar-track
 {
-    border-radius: 10px;
-    background-color: $grey;
+   
+    background-color: #a2b6c666;
 }
  
 #style-2::-webkit-scrollbar
 {
-    width: 8px;
-    background-color:  #e2e2e2;
+    width: 12px; 
+    background-color: #a2b6c666;
 }
 
 #style-2::-webkit-scrollbar-thumb
 {
-    border-radius: 10px;
-    background-color: $dark;
+    background-color: #a2b6c6;
 }
 
 
@@ -166,5 +185,8 @@
     .staffPhoto{
         width: 100%;
         border-radius: 5px;
+        @media (max-width: 500px){
+            display: none;
+        }
     }
 }

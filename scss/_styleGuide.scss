@@ -33,7 +33,7 @@ h4{
 }
 
 p{
-    @extend %light;
+    @extend %regular;
     color: white;
     font-size: 0.78rem;
     letter-spacing: 0.07rem;
@@ -91,3 +91,8 @@ li{
     opacity: 0;
     pointer-events: none;
 }
+
+.joinUsLinks { 
+    cursor: pointer;  
+    &:hover { 
+    color: #ee8a1e; } }
