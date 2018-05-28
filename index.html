@@ -171,31 +171,34 @@
     <div class="container">
         <!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
         <div class="content">
+            <div id="whatWeDoContent" class="col-3">
             <p class="col-3">Apis specialises in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis and design, digital design, change and transformation, complex procurement and program evaluation and review.</p>
-            <div class="businessLines col-3">
-                <div class="businessLine" onclick="joinClick('advisory.html')">
-                    <!--                <img src="/images/advisory.svg" width="50px">-->
+            </div>
+            <div class="businessLines col-1">
+                <div class="businessLine" onclick="businessLineClick('advisory')">
+                                    <img src="/images/success.svg" >
                     <h2>Advisory</h2>
-                    <p style="font-size: 0.78rem">Apis offers a range of advisory services to clients. We do this across two primary streams of services.</p>
+<!--                    <p style="font-size: 0.78rem">Apis offers a range of advisory services to clients. We do this across two primary streams of services.</p>-->
                 </div>
             </div>
-            <div class="businessLines col-3">
-                <div class="businessLine" onclick="joinClick('design.html')">
-                    <!--                <img src="/images/design.svg" width="50px">-->
+            <div class="businessLines col-1">
+                <div class="businessLine" onclick="businessLineClick('design')">
+                                    <img src="/images/compose.svg" >
                     <h2>Design</h2>
-                    <p style="font-size: 0.78rem">Full business and digital design services from user research and service design.</p>
+<!--                    <p style="font-size: 0.78rem">Full business and digital design services from user research and service design.</p>-->
                 </div>
             </div>
 <!--            <hr style="width: 100%; grid-column:  span 3; opacity: 0.2">-->
-            <div class="businessLines col-3">
-                <div class="businessLine" onclick="joinClick('delivery.html')">
-                    <!--                <img src="/images/delivery.svg" width="50px">-->
+            <div class="businessLines col-1">
+                <div class="businessLine" onclick="businessLineClick('delivery')">
+                                    <img src="/images/settings.svg" >
                     <h2>Delivery</h2>
-                    <p style="font-size: 0.78rem">Planning, management, delivery and assurance of complex policy reform initiatives.</p>
+<!--                    <p style="font-size: 0.78rem">Planning, management, delivery and assurance of complex policy reform initiatives.</p>-->
                 </div>
             </div>
 </div>
 </div>
+    
 <div class="backgroundImage"></div>
 
 </div>
@@ -214,10 +217,10 @@
 
             <div class="caseStudies col-3">
                 <h2>OUR CLIENTS INCLUDE:</h2>
-                <a target="_blank" href="/caseStudies/DSS_caseStudy.pdf">
+                <a target="_blank" onclick="joinClick('caseStudy_DSS.html')">
                     <div class="caseStudy"><span class="department">Department of </span>Social Services  <span class="caseStudyLink">Read the Case Study </span></div>
                 </a>
-                <a target="_blank" href="/caseStudies/HeadToHealth_businessCase.pdf">
+                <a target="_blank" onclick="joinClick('caseStudy_h2h.html')">
                     <div class="caseStudy"><span class="department">Department of </span>Health <span class="caseStudyLink">Read the Case Study </span>
 <!--                        <img src="/images/pdf-file.svg" height="20px">-->
                     </div>
@@ -485,25 +488,25 @@
 
         <form class="content" method="POST" action="https://formspree.io/max.ingham@apisgroup.com.au">
                 <div class="col-1 formLeft">
-                    <!-- Text input-->
-                            <input id="textinput" name="name" type="text" placeholder="Name" class="form-control input-md">
-
-                    <!-- Text input-->
-                            <input id="textinput" name="email" type="text" placeholder="email" class="form-control input-md">
-                    <!-- Button -->
-                    <button id="singlebutton" class="btn btn-primary">Submit</button>
-
-                </div>
-                <div class="col-1 formRight">
                     <!-- Textarea -->
                     <textarea class="form-control" id="textarea" placeholder="Query" name="query"></textarea>
+                </div>
+                <div class="col-1 formRight">
+                   
+                    <!-- Text input-->
+                    <input id="textinput" name="name" type="text" placeholder="Name" class="form-control input-md">
+
+                    <!-- Text input-->
+                    <input id="textinput2" name="email" type="text" placeholder="email" class="form-control input-md">
+                    <!-- Button -->
+                    <button id="singlebutton" class="btn btn-primary">Submit</button>
 
                     
                 </div>
             <p class="col-1">
                 <span>info@apisgroup.com.au</span><br>
-                <span>040000000</span><br>
-                <span>4/18 Bentham St, Yarralumla ACT</span>
+                <span>02 6206 0000</span><br>
+                <span>4/18 Bentham St, Yarralumla ACT 2600</span>
             </p>
 
         </form>

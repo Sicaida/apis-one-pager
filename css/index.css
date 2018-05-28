@@ -595,6 +595,11 @@ hr.titleLine {
     .staff {
       grid-gap: 0.5rem; } }
 
+.staffInfoBox {
+  background: rgba(17, 19, 23, 0.41);
+  border-radius: 0.1px;
+  box-shadow: 0 0 0 7pt rgba(17, 19, 23, 0.41); }
+
 .staffBox {
   grid-column: span 1;
   position: relative;
@@ -627,7 +632,8 @@ hr.titleLine {
     color: #ee8a1e; }
 
 .caseStudies a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .caseStudies a:hover .caseStudyLink {
     color: #ee8a1e;
     font-weight: 600; }
@@ -667,9 +673,12 @@ hr.titleLine {
 .businessLine {
   display: grid;
   cursor: pointer;
-  grid-template-columns: 1fr 3fr;
   /* grid-gap: 2rem; */
-  padding-top: 20px; }
+  padding-top: 20px;
+  border-radius: 6px;
+  margin: 0 20px;
+  transition: background 0.25s;
+  text-align: center; }
   @media (max-width: 400px) {
     .businessLine {
       grid-gap: 0.6rem; } }
@@ -682,11 +691,17 @@ hr.titleLine {
   .businessLine p, .businessLine ul, .businessLine .joinUsForm form textarea, .joinUsForm form .businessLine textarea, .businessLine .joinUsForm form input, .joinUsForm form .businessLine input {
     flex: 2 2 0;
     grid-column: span 1; }
-  @media (max-width: 500px) {
-    .businessLine img {
-      display: none; } }
-  .businessLine:hover h2 {
-    color: #ee8a1e; }
+  .businessLine img {
+    margin: auto;
+    width: 65px;
+    margin-bottom: 10px; }
+  .businessLine:hover {
+    background: rgba(255, 255, 255, 0.08); }
+
+.businessLineInfoBox {
+  background: rgba(17, 19, 23, 0.08);
+  border-radius: 0.1px;
+  box-shadow: 0 0 0 7pt rgba(17, 19, 23, 0.08); }
 
 .charity {
   display: grid;
