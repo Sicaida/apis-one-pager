@@ -301,7 +301,7 @@ template {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300; }
 
-p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input, #section0 h1, .joinUsForm ul, .joinUsForm form {
+p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input, .joinUsContent p, #section0 h1, .joinUsForm ul, .joinUsForm form {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
 
@@ -330,7 +330,7 @@ h2 {
   margin: 0;
   margin-bottom: 0.5rem; }
 
-p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input {
+p, ul, .joinUsForm p, .joinUsForm form textarea, .joinUsForm form input, .joinUsContent p {
   color: white;
   font-size: 0.78rem;
   letter-spacing: 0.07rem;
@@ -887,6 +887,23 @@ hr.titleLine {
 
 #style-2::-webkit-scrollbar-thumb {
   background-color: #a2b6c6; }
+
+.joinUsContent h2 {
+  margin: 10px 0 0 0;
+  cursor: pointer; }
+  .joinUsContent h2:hover {
+    color: #1f2833; }
+
+.joinUsContent ul, .joinUsContent .joinUsForm form textarea, .joinUsForm form .joinUsContent textarea, .joinUsContent .joinUsForm form input, .joinUsForm form .joinUsContent input, .joinUsContent p {
+  text-align: left;
+  color: #1f2833; }
+
+.joinUsContent #joinUs1, .joinUsContent #joinUs2, .joinUsContent #joinUs3, .joinUsContent #joinUs4 {
+  max-height: 0;
+  overflow: hidden; }
+  .joinUsContent #joinUs1.active, .joinUsContent #joinUs2.active, .joinUsContent #joinUs3.active, .joinUsContent #joinUs4.active {
+    display: block;
+    max-height: 300px; }
 
 .staffInfo {
   display: grid;

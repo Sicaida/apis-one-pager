@@ -149,3 +149,10 @@ jQuery(document).ready(function ($) {
         $(".staff").append(content);
     }
 });
+
+
+function joinUsOpen(clicked_id){
+    $('.joinUsContent > .active').removeClass('active');
+    var id_p = '#'+ document.getElementById(clicked_id).nextElementSibling.id;
+    $(id_p).addClass('active');
+}
