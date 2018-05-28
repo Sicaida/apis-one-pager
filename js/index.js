@@ -26,6 +26,7 @@ function closeMobileMenu(push) {
 function closeOverlay(push) {
     if (clicked == true) {
         $('.overlay').removeClass('overlayOn');
+        $("#overlayContent").html('');
         clicked = false;
         if (push == undefined){
             history.back();
@@ -36,7 +37,16 @@ function closeOverlay(push) {
 //Close overlay function
 function closeStaff() {
     $("#whoWeAreContent").html("<p style='animation-delay: 0.4s'>Apis is a Canberra based professional services firm specialising in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis, digital design, complex procurement and program evaluation and review.  We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p><br><p style='animation-delay: 0.45s'  class='col-3'>Our purpose is to become partners and trusted advisors to our clients; to inspire our people to achieve their best in interesting and challenging environments; and to be pragmatic and agile in meeting our clients’ challenges.</p>");
+    $('#whoWeAreContent').removeClass('staffInfoBox');
 };
+
+function closeBusinessLine() {
+    $("#whatWeDoContent").html(" <p class='col-3'>Apis specialises in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis and design, digital design, change and transformation, complex procurement and program evaluation and review.</p>");
+    $('#whatWeDoContent').removeClass('businessLineInfoBox');
+};
+
+
+
 
 //load up Join Us content on button click
 function joinClick(file) {
@@ -60,7 +70,7 @@ function staffClick(staff) {
 //    if (clicked == true) {
 ////        closeOverlay();
 //    } else {
-////        $('.overlay').addClass('overlayOn');
+        $('#whoWeAreContent').addClass('staffInfoBox');
 //        clicked = true;
         $.ajax({
             url: "/html/ajax/staff/" + staff + ".html",
@@ -70,6 +80,18 @@ function staffClick(staff) {
         });
 //        history.pushState(null, null, '#' + staff); //set url extension
 //    }
+};
+
+//Load up business line on click
+function businessLineClick(businessLine) {
+    $('#whatWeDoContent').addClass('businessLineInfoBox');
+    $.ajax({
+        url: "/html/ajax/" + businessLine + ".html",
+        success: function (result) {
+            $("#whatWeDoContent").html(result);
+        }
+    });
+    
 };
 
 
@@ -125,6 +147,5 @@ jQuery(document).ready(function ($) {
        
         var content = "<div style='animation-delay: 0.6s' class='staffBox' onclick='staffClick(&quot;" +staffName + "&quot;)'><img class='staffPhoto' src='/images/" + staffName + ".jpg'></div>";
         $(".staff").append(content);
-        console.log(content);
     }
 });

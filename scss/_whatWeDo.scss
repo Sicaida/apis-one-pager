@@ -2,6 +2,7 @@
 //    margin-top: 30px;
     a{
         text-decoration: none;
+        cursor: pointer;
         &:hover{
         .caseStudyLink{
 //            background: rgba(255, 255, 255, 0.67);
@@ -69,9 +70,13 @@
 //    grid-template-columns: 0.5fr 1fr 0.1fr;
 //    grid-gap: 1rem;
     cursor: pointer;
-    grid-template-columns: 1fr 3fr;
+//    grid-template-columns: 1fr 3fr;
     /* grid-gap: 2rem; */
     padding-top: 20px;
+    border-radius: 6px;
+    margin: 0 20px;
+    transition: background 0.25s;
+    text-align: center;
 //    margin-bottom: 40px;
     @media (max-width: 400px){
         grid-gap:0.6rem;
@@ -90,14 +95,24 @@
         grid-column: span 1;
     }
     img{
-        @media (max-width:500px){
-            display: none;
-        }
+        margin: auto;
+        width: 65px;
+        margin-bottom: 10px;
+//        @media (max-width:500px){
+//            display: none;
+//        }
     }
     &:hover{
-//        border-top: 1px solid $dark;
-        h2{
-            color: $orange;
-        }
+        background: rgba(255, 255, 255, 0.08);
+        
+//        h2{
+//            color: $orange;
+//        }
     }
+}
+
+.businessLineInfoBox{
+    background: rgba(17, 19, 23, 0.08);
+    border-radius: 0.1px;
+    box-shadow: 0 0 0 7pt rgba(17, 19, 23, 0.08);
 }
