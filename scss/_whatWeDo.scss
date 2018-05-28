@@ -2,21 +2,19 @@
 //    margin-top: 30px;
     a{
         text-decoration: none;
-        display: inline-block;
-        width: auto; 
-        .caseStudy{
-            background: rgba(255, 255, 255, 0.67);
-            color: $dark;
-            padding-left: 40px;
-            &:hover{
-                background: rgba(255, 255, 255, 0.8);
-            }
+        &:hover{
+        .caseStudyLink{
+//            background: rgba(255, 255, 255, 0.67);
+            color: $orange;
+            font-weight: 600;
+//            padding-left: 40px;
+            
         }
-    }
+        }}
     span{
-        text-decoration: none;
-        display: inline-block;
-        width: auto; 
+//        text-decoration: none;
+//        display: inline-block;
+//        width: auto; 
     }
     h2{
         color: white;
@@ -30,32 +28,40 @@
 }
 
 .caseStudy{
-//    width: 100%;
-//    padding: 10px;
-//    @extend %semiBold;
-//    color: $dark;
-//    text-align: center;
-//    background: rgba(255, 255, 255, 0.67);
-//    margin-bottom: 10px;
-//    border-radius: 5px;
-    
     width: auto;
+    letter-spacing: 0.05i rem;
     font-size: 0.9rem;
-    padding: 10px 20px;
+    padding: 5px 0px;
     @extend %semiBold;
     color: white;
-    text-align: center;
-//    background: rgba(255, 255, 255, 0.67);
     margin-bottom: 6px;
     border-radius: 50px;
     position: relative;
-    img{
-        position: absolute;
-        @include centererV;
-        left: 10px;
-        
-    }  
+    vertical-align: text-bottom;
+//    img{
+//        position: absolute;
+//        @include centererV;
+//        left: 10px;
+//        
+//    }  
   
+}
+
+.department{
+//    opacity: 0.8;
+    font-weight: 400;
+}
+
+.caseStudyLink{
+    font-weight: 400;
+    vertical-align: text-bottom;
+
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
 }
 
 .businessLine{

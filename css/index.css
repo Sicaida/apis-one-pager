@@ -627,20 +627,10 @@ hr.titleLine {
     color: #ee8a1e; }
 
 .caseStudies a {
-  text-decoration: none;
-  display: inline-block;
-  width: auto; }
-  .caseStudies a .caseStudy {
-    background: rgba(255, 255, 255, 0.67);
-    color: #1f2833;
-    padding-left: 40px; }
-    .caseStudies a .caseStudy:hover {
-      background: rgba(255, 255, 255, 0.8); }
-
-.caseStudies span {
-  text-decoration: none;
-  display: inline-block;
-  width: auto; }
+  text-decoration: none; }
+  .caseStudies a:hover .caseStudyLink {
+    color: #ee8a1e;
+    font-weight: 600; }
 
 .caseStudies h2 {
   color: white;
@@ -652,19 +642,27 @@ hr.titleLine {
 
 .caseStudy {
   width: auto;
+  letter-spacing: 0.05i rem;
   font-size: 0.9rem;
-  padding: 10px 20px;
+  padding: 5px 0px;
   color: white;
-  text-align: center;
   margin-bottom: 6px;
   border-radius: 50px;
-  position: relative; }
-  .caseStudy img {
-    position: absolute;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    left: 10px; }
+  position: relative;
+  vertical-align: text-bottom; }
+
+.department {
+  font-weight: 400; }
+
+.caseStudyLink {
+  font-weight: 400;
+  vertical-align: text-bottom;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 50px; }
 
 .businessLine {
   display: grid;
