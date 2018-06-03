@@ -67,30 +67,34 @@ function joinClick(file) {
 
 //Load up staff profile when clicking on their photo
 function staffClick(staff) {
-//    if (clicked == true) {
-////        closeOverlay();
-//    } else {
         $('#whoWeAreContent').addClass('staffInfoBox');
-//        clicked = true;
-        $.ajax({
-            url: "/html/ajax/staff/" + staff + ".html",
-            success: function (result) {
-                $("#whoWeAreContent").html(result);
-            }
-        });
-//        history.pushState(null, null, '#' + staff); //set url extension
-//    }
+        $('#whoWeAreContent').fadeOut(200, function(){
+            $.ajax({
+                url: "/html/ajax/staff/" + staff + ".html",
+                success: function (result) {
+                    $("#whoWeAreContent").html(result);
+                }
+            });
+            $('#whoWeAreContent').fadeIn(200);
+        }); 
+       
+
+
 };
 
 //Load up business line on click
 function businessLineClick(businessLine) {
     $('#whatWeDoContent').addClass('businessLineInfoBox');
-    $.ajax({
-        url: "/html/ajax/" + businessLine + ".html",
-        success: function (result) {
-            $("#whatWeDoContent").html(result);
-        }
-    });
+    $('#whatWeDoContent').fadeOut(200, function(){
+        $.ajax({
+            url: "/html/ajax/" + businessLine + ".html",
+            success: function (result) {
+                $("#whatWeDoContent").html(result);
+            }
+        });
+        $('#whatWeDoContent').fadeIn(200);
+    }); 
+    
     
 };
 
