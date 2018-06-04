@@ -8,27 +8,41 @@
     <meta name="keywords" content="Apis Group" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/modules/jquery.fullPage.css" />
-<!--    <link rel="stylesheet" type="text/css" href="/modules/animate.css" />-->
+   
+<!--    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <!--    <script type="text/javascript" src="modules/scrolloverflow.js"></script>-->
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="modules/rellax.min.js"></script>
 <!--    <script type="text/javascript" src="modules/wow.min.js"></script>-->
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            var rellax = new Rellax('.rellax', {
+//                speed: -2,
+                center: false,
+//                wrapper: '#fullpage',
+//                round: true,
+                vertical: true,
+                horizontal: false
+            });
+            
             $('#fullpage').fullpage({
                 loopBottom: false,
 //                scrollBar:true,
                 anchors: ['header', 'whoweare', 'whatwedo', 'whowesupport', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
-//                paddingTop: '73px',
+                fitToSectionDelay: 500,
+                paddingTop: '73px',
 //                paddingBottom: '73px', 
                 responsiveWidth: 1000,
                 responsiveHeight: 500, 
-
-                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
+//                scrollBar: true,
+                
+                autoScrolling: false,
+//                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
 //                onLeave: function(index, nextIndex, direction){
 ////                   leavingSection = $(this);
 //                    
