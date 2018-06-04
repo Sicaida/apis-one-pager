@@ -73,7 +73,7 @@ function staffClick(staff) {
                 url: "/html/ajax/staff/" + staff + ".html",
                 success: function (result) {
                     $("#whoWeAreContent").html(result);
-                }
+                }      
             });
             $('#whoWeAreContent').fadeIn(200);
         }); 
