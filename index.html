@@ -17,20 +17,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <!--    <script type="text/javascript" src="modules/scrolloverflow.js"></script>-->
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="modules/rellax.min.js"></script>
 <!--    <script type="text/javascript" src="modules/wow.min.js"></script>-->
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            var rellax = new Rellax('.rellax', {
-//                speed: -2,
-                center: true,
-//                wrapper: '#fullpage',
-//                round: true,
-                vertical: true,
-                horizontal: false
-            });
+           
             
             $('#fullpage').fullpage({
                 loopBottom: false,
@@ -134,50 +126,35 @@
     </div>
     <div class="backgroundImage"></div>
 </div>
-        
-  
-<!-- whoWeAre.html -->
-<div class="section fp-auto-height-responsive" id="section1"><a style="position: absolute" href="#who"></a>
-    <div  class=" container" style="border: 30px solid transparent;
-                                                                box-sizing: border-box;
-                                                                height: 100%;">
-        <h1 style="    width: 100%;
-                   text-align: center;
-                   position: absolute;
-                   top: 50%;
-                   left: 50%;
-                   transform: translate(-50%, -50%);" data-rellax-speed="-2" class="rellax" >Who We Are</h1>
-        <div  data-rellax-speed="-1" class="rellax backgroundImage" style="position: absolute;
-                                            height: 130%;
-                                            top: 0;
-                                            left: 0;
-                                            /* padding: 50px; */
-                                            width: 100%;
-                                            /* left: 30px; */
-                                            /* top: 103px; */
-                                            overflow: hidden;
-                                            /* z-index: -1; */
-                                            /* border: 50px solid white; */"><img style="height: 100%" src="/images/whoWeAre.png"> </div>
-   </div>
-    <div class="container" style="max-width: 560px;
-                                                                margin-left: 50px;">
-<!--        <div style="width: 3px;height: 100%;background: #ffffff8a;position: absolute;left: -45px;"></div>-->
-        <div class="content" >
-            <div id="whoWeAreContent"  class="col-3"><p style="animation-delay: 0.4s">Apis specialises in the Business of government. Our primary purpose is to assist public service leaders in the effective delivery of government business. But we pride ourselves on brining a lot more to the relationship. We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p>
-                <br><h2 style="font-size: 0.9rem; margin-bottom: 0;">What's with the bull?</h2>
-                <p style="animation-delay: 0.45s"  class="col-3">
-                The Apis Bull has been with us since our foundation in 1999. It is synonymous with our name – its origins were based on Apis, the bull god, symbolising prosperity and foresight and providing trusted guidance on issues of change.
-                </p></div>
-            
-            
+        <!-- whoWeAre.html -->
+<div class="section fp-auto-height-responsive" id="section1">
+    <a style="position: absolute" href="#who"></a>
+    
+    <div class=" container" style="border: 30px solid transparent;box-sizing: border-box;height: 100%;">
+        <h1 style="    width: 100%;text-align: center;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">Who We Are</h1>
+        <div class=" backgroundImage" style="position: absolute; height: 130%;top: 0;left: 0;width: 100%;overflow: hidden;"><img style="height: 100%" src="/images/whoWeAre.png"> </div>
+    </div>
+    
+    <div class="container" style="max-width: 560px; margin-left: 50px;">
+        <div class="content">
+            <div id="whoWeAreContent" class="col-3">
+                <p style="animation-delay: 0.4s">Apis specialises in the Business of government. Our primary purpose is to assist public service leaders in the effective delivery of government business. But we pride ourselves on brining a lot more to the relationship. We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p>
+                <br>
+                <h2 style="font-size: 0.9rem; margin-bottom: 0;">What's with the bull?</h2>
+                <p style="animation-delay: 0.45s" class="col-3">
+                    The Apis Bull has been with us since our foundation in 1999. It is synonymous with our name – its origins were based on Apis, the bull god, symbolising prosperity and foresight and providing trusted guidance on issues of change.
+                </p>
+            </div>
+
+
             <div style="animation-delay: 0.5s" class="col-3">
-                <h2 >A few of our People</h2>
+                <h2>A few of our People</h2>
                 <div class="staff">
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 </div>
         <!-- whatWeDo.html -->
