@@ -161,6 +161,10 @@ function joinUsOpen(clicked_id){
     $(id_p).addClass('active');
 }
 
+function resizeTitle2(element){
+    
+    $(element + ' .titleBox').addClass('titleBoxLarge');
+}
 
 function resizeTitle(element){
     var id = element.get(0).id;

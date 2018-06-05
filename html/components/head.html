@@ -15,7 +15,7 @@
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
     <script type="text/javascript" src="/modules/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
-    <script type="text/javascript" src="/modules/fullpage.offsetSections.limited.min.js"></script>
+<!--    <script type="text/javascript" src="/modules/fullpage.offsetSections.limited.min.js"></script>-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -23,6 +23,7 @@
             
             $('#fullpage').fullpage({
                 loopBottom: false,
+                offsetSections: true,
 //                scrollBar:true,
                 anchors: ['header', 'whoweare', 'whatwedo', 'whowesupport', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
@@ -33,57 +34,25 @@
 //                responsiveHeight: 500, 
 //                scrollBar: true,
                 
-                autoScrolling: false,
+//                autoScrolling: false,
 //                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
                 
                 onLeave: function(index, nextIndex, direction){
                     $('.titleBoxLarge').removeClass('titleBoxLarge');
-                    
+                    setTimeout(function() {resizeTitle2('.fp-section.active');}, 300);
                 }
-                
-//                onLeave: function(index, nextIndex, direction){
-////                   leavingSection = $(this);
-//                    
-////                   
-////                    else if(index == 2 && direction == 'up'){
-////                        alert("Going to section 1!");
-////                    }
-//                    setTimeout(function() {
-//                    
-//                         if ($('#section1').hasClass("active") == true){
-//                            $("#section1 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-//                             $("#section1 .container .content").find('> p, > div').addClass('animated fadeInUp');
-//                        }
-//                            else if ($('#section2').hasClass("active") == true){
-//                                $("#section2 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-//                            }
-//                            else if ($('#section3').hasClass("active") == true){
-//                                $("#section3 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-//                            }
-//                            else if ($('#section4').hasClass("active") == true){
-//                                $("#section4 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-//                                $("#section4 .container .content").find('> p, > div').addClass('animated fadeIn');
-//                            }
-//                            else if ($('#section5').hasClass("active") == true){
-//                                $("#section5 .container h1").addClass('animated fadeIn').css('animation-delay', '.3s');
-//                            }
-//                    
-//                    }, 10);
-//                    
-//                       
-//                    
-//                }
+            
             });
             
-            $.stellar({
-                verticalOffset: 73,
-                horizontalOffset: 0,
-                hideDistantElements: false,
-                horizontalScrolling: false,
-                positionProperty: 'transform',
-
-
-            });
+//            $.stellar({
+//                verticalOffset: 73,
+//                horizontalOffset: 0,
+//                hideDistantElements: false,
+//                horizontalScrolling: false,
+//                positionProperty: 'transform',
+//
+//
+//            });
         });
     </script>
 </head>
