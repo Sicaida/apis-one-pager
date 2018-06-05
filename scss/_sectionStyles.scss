@@ -122,3 +122,11 @@ hr.titleLine {
     background-image: linear-gradient(to right, transparent 50%, #ffffff 50%);
     background-size: 19px 100%;
 }
+
+.section .container.titleBox{
+    border: 30px solid transparent;box-sizing: border-box;height: 100%; display: grid; align-items: center; transition: border 0.5s;
+}
+
+.section .container.titleBox.titleBoxLarge{
+    border: 0px solid transparent;
+}

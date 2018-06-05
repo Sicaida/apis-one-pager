@@ -12,14 +12,20 @@
 <!--    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<!--    <script type="text/javascript" src="modules/scrolloverflow.js"></script>-->
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
-<!--    <script type="text/javascript" src="modules/wow.min.js"></script>-->
+    <script type="text/javascript" src="/modules/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-           
+            $.stellar({
+                verticalOffset: 30,
+                hideDistantElements: false,
+                horizontalScrolling: false,
+                positionProperty: 'transform',
+                
+                
+            });
             
             $('#fullpage').fullpage({
                 loopBottom: false,
@@ -35,6 +41,12 @@
                 
                 autoScrolling: false,
 //                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
+                
+                onLeave: function(index, nextIndex, direction){
+                    $('.titleBoxLarge').removeClass('titleBoxLarge');
+                    
+                }
+                
 //                onLeave: function(index, nextIndex, direction){
 ////                   leavingSection = $(this);
 //                    

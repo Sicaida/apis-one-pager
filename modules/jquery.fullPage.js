@@ -1018,6 +1018,10 @@
 
                 scrollPage($(SECTION_ACTIVE_SEL));
                 isResizing = false;
+                setTimeout(function() {
+                    resizeTitle($(SECTION_ACTIVE_SEL));
+                }, 500);
+//                console.log('scrolled');
             }
         }
 

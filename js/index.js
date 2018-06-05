@@ -160,3 +160,10 @@ function joinUsOpen(clicked_id){
     var id_p = '#'+ document.getElementById(clicked_id).nextElementSibling.id;
     $(id_p).addClass('active');
 }
+
+
+function resizeTitle(element){
+    var id = element.get(0).id;
+    console.log(id);
+    $('#' + id + ' .titleBox').addClass('titleBoxLarge');
+}
