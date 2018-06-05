@@ -18,7 +18,7 @@
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
     <script type="text/javascript" src="/modules/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
-<!--    <script type="text/javascript" src="/modules/fullpage.offsetSections.limited.min.js"></script>-->
+    <script type="text/javascript" src="/modules/fullpage.offsetSections.limited.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -26,7 +26,6 @@
             
             $('#fullpage').fullpage({
                 loopBottom: false,
-                offsetSections: true,
 //                scrollBar:true,
                 anchors: ['header', 'whoweare', 'whatwedo', 'whowesupport', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
@@ -37,12 +36,12 @@
 //                responsiveHeight: 500, 
 //                scrollBar: true,
                 
-//                autoScrolling: false,
+                autoScrolling: false,
 //                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
                 
                 onLeave: function(index, nextIndex, direction){
                     $('.titleBoxLarge').removeClass('titleBoxLarge');
-                    setTimeout(function() {resizeTitle2('.fp-section.active');}, 300);
+                    
                 }
                 
 //                onLeave: function(index, nextIndex, direction){
@@ -79,15 +78,15 @@
 //                }
             });
             
-//            $.stellar({
-//                verticalOffset: 73,
-//                horizontalOffset: 0,
-//                hideDistantElements: false,
-//                horizontalScrolling: false,
-//                positionProperty: 'transform',
-//
-//
-//            });
+            $.stellar({
+                verticalOffset: 73,
+                horizontalOffset: 0,
+                hideDistantElements: false,
+                horizontalScrolling: false,
+                positionProperty: 'transform',
+
+
+            });
         });
     </script>
 </head>
