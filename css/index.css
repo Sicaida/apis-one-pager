@@ -502,11 +502,15 @@ ul {
   text-align: center;
   vertical-align: middle;
   display: grid !important;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   grid-template-rows: 1fr;
   height: 100%;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+
+.rightSection .fp-tableCell {
+  grid-template-columns: 1fr 1fr; }
 
 .section {
   position: relative; }
@@ -544,6 +548,7 @@ ul {
     opacity: 0.8; }
 
 #section1 {
+  background: #f4f4f4;
   background-size: cover;
   background-position: center; }
   #section1 h1 {
@@ -551,17 +556,21 @@ ul {
     -vendor-animation-delay: 2s; }
 
 #section2 {
-  background: #7cbbce;
-  background-image: url("/images/whatWeDo.png");
   background-size: cover;
   background-position: center; }
   #section2 h1 {
     color: white;
     -vendor-animation-delay: 2s; }
 
+#sectionSupport {
+  background: #f4f4f4;
+  background-size: cover;
+  background-position: center; }
+  #sectionSupport h1 {
+    color: white;
+    -vendor-animation-delay: 2s; }
+
 #section3 {
-  background: white;
-  background-image: url("/images/whyJoinUs.png");
   background-size: cover;
   background-position: center; }
   #section3 h1 {
@@ -569,8 +578,7 @@ ul {
     -vendor-animation-delay: 2s; }
 
 #section4 {
-  background: #a2b6c6;
-  background-image: url("/images/community.png");
+  background: #f4f4f4;
   background-size: cover;
   background-position: center; }
   #section4 h1 {
@@ -578,12 +586,12 @@ ul {
     -vendor-animation-delay: 2s; }
 
 #section5 {
-  background: #1f2833;
+  background: white;
   overflow: hidden;
   background-size: cover;
   background-position: center; }
   #section5 h1 {
-    color: white;
+    color: #1f2833;
     -vendor-animation-delay: 2s; }
 
 hr.titleLine {
@@ -598,23 +606,27 @@ hr.titleLine {
   background-size: 19px 100%; }
 
 .section .container.titleBox {
-  border: 30px solid transparent;
+  border: 0px solid transparent;
+  border-top: 0px solid transparent;
   box-sizing: border-box;
   height: 100%;
+  position: relative;
   display: grid;
   align-items: center;
   transition: border 0.5s; }
   .section .container.titleBox h1 {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
 
 .section .container.titleBox.titleBoxLarge {
-  border: 0px solid transparent; }
+  border: 30px solid transparent;
+  border-top: 103px solid transparent; }
 
 .backgroundImage {
   position: absolute;
-  height: 130%;
-  top: 0;
+  height: 200%;
+  top: -50%;
   left: 0;
   width: 100%;
   overflow: hidden; }

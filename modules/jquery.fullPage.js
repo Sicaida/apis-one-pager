@@ -1020,7 +1020,7 @@
                 isResizing = false;
                 setTimeout(function() {
                     resizeTitle($(SECTION_ACTIVE_SEL));
-                }, 300);
+                }, 500);
 //                console.log('scrolled');
             }
         }
