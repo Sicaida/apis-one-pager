@@ -24,6 +24,9 @@
 
 .section { //@extend %section;
     position: relative;
+    a{
+        position: absolute;
+    }
     .container{
         /* width: 45vw; */
         display: inline-block;
@@ -51,7 +54,7 @@
     background-image: url("/images/hero2.png");
     @include section;
     background-position: bottom;
-    min-height: 100vh;
+    min-height: 100vh; 
     h1{
         color: $orange;
         -vendor-animation-delay: 2s;
@@ -124,9 +127,30 @@ hr.titleLine {
 }
 
 .section .container.titleBox{
-    border: 30px solid transparent;box-sizing: border-box;height: 100%; display: grid; align-items: center; transition: border 0.5s;
+    border: 30px solid transparent;
+    box-sizing: border-box;
+    height: 100%; display: grid; 
+    align-items: center; 
+    transition: border 0.5s;
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    
 }
 
 .section .container.titleBox.titleBoxLarge{
     border: 0px solid transparent;
+}
+
+.backgroundImage{
+    position: absolute; 
+    height: 130%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    img{
+        height: 100%;
+    }
 }

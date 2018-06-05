@@ -510,6 +510,8 @@ ul {
 
 .section {
   position: relative; }
+  .section a {
+    position: absolute; }
   .section .container {
     /* width: 45vw; */
     display: inline-block;
@@ -602,9 +604,22 @@ hr.titleLine {
   display: grid;
   align-items: center;
   transition: border 0.5s; }
+  .section .container.titleBox h1 {
+    width: 100%;
+    text-align: center; }
 
 .section .container.titleBox.titleBoxLarge {
   border: 0px solid transparent; }
+
+.backgroundImage {
+  position: absolute;
+  height: 130%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; }
+  .backgroundImage img {
+    height: 100%; }
 
 .staff {
   display: grid;
