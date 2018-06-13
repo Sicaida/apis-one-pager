@@ -37,13 +37,13 @@
         /* width: 45vw; */
         display: inline-block;
         text-align: left;
-        overflow: hidden;
+//        overflow: hidden;
         position: relative;
         /* vertical-align: middle; */
         grid-column: span 1;
         /* padding: 220px; */
         /* height: 100%; */
-        transform: translate3d(0, 0, 0) !important;
+//        transform: translate3d(0, 0, 0) !important;
         width: 100%;
         
         .content{
@@ -57,7 +57,7 @@
 
 #section0{
     background-color: white;
-    background-image: url("/images/hero2.png");
+//    background-image: url("/images/canberra-morning-lake-burley-griffin.jpg");
     @include section;
     background-position: bottom;
     min-height: 100vh; 
@@ -66,7 +66,7 @@
         -vendor-animation-delay: 2s;
         @extend %regular;
         font-size: 2.8rem;
-        opacity: 0.8;
+//        opacity: 0.8;
     }
 }
 
@@ -104,7 +104,7 @@
 //    background-image: url("/images/whyJoinUs.png");
     @include section; 
     h1{
-        color: $orange;
+        color: white;
         -vendor-animation-delay: 2s;
     }
 }
@@ -166,12 +166,33 @@ hr.titleLine {
 
 .backgroundImage{
     position: absolute; 
-    height: 200%;
-    top: -50%;
+    height: 100%;
+    top: 0;
     left: 0;
+   
     width: 100%;
     overflow: hidden;
     img{
         height: 100%;
+        animation: kenburns 100s linear 0s infinite alternate;
     }
+}
+
+@keyframes kenburns {
+    0% {
+        opacity: 1;
+        transform:  translate3d(-30%, 0px, 0px);
+    }
+//    5% {
+//        opacity: 1;
+//    }
+    100% {
+        transform: scale3d(1.2, 1.2, 1.2) translate3d(0%, 0px, 0px);
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+//    100% {
+//        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+//        opacity: 0;
+//    }
 }

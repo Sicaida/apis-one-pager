@@ -3,6 +3,7 @@
     a{
         text-decoration: none;
         cursor: pointer;
+        position: relative;
         &:hover{
         .caseStudyLink{
 //            background: rgba(255, 255, 255, 0.67);
@@ -18,7 +19,7 @@
 //        width: auto; 
     }
     h2{
-        color: white;
+        color: $dark;
         text-align: left;
         font-weight: 600;
         font-size: 0.88rem;
@@ -34,7 +35,7 @@
     font-size: 0.9rem;
     padding: 5px 0px;
     @extend %semiBold;
-    color: white;
+    color: $dark;
     margin-bottom: 6px;
     border-radius: 50px;
     position: relative;
@@ -85,7 +86,7 @@
         flex: 1 1 0;
         grid-column: span 1;
 //        text-align: right;
-        color: white;
+        color: $dark;
         @extend %semiBold;
         font-size: 1rem;
         text-transform: uppercase;
