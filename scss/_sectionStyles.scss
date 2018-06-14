@@ -15,7 +15,7 @@
     height: 100%;
     align-items: center;
     position: relative;
-    
+    min-height: 61vh;
 } 
 
 .rightSection .fp-tableCell{
@@ -143,8 +143,8 @@ hr.titleLine {
 }
 
 .section .container.titleBox{
-    border: 0px solid transparent;
-    border-top: 0px solid transparent;
+//    border: 30px solid transparent;
+//    border-top: 0px solid transparent;
     box-sizing: border-box;
     height: 100%;
     position: relative;
@@ -160,8 +160,8 @@ hr.titleLine {
 }
 
 .section .container.titleBox.titleBoxLarge{
-    border: 30px solid transparent;
-    border-top: 103px solid transparent;
+//    border: 0px solid transparent;
+//    border-top: 103px solid transparent;
 }
 
 .backgroundImage{
@@ -172,9 +172,13 @@ hr.titleLine {
    
     width: 100%;
     overflow: hidden;
+    background: $dark;
     img{
         height: 100%;
-        animation: kenburns 100s linear 0s infinite alternate;
+        animation: kenburns 350s linear 0s infinite alternate;
+        filter: grayscale(100);
+        mix-blend-mode: luminosity;
+        position: absolute;
     }
 }
 

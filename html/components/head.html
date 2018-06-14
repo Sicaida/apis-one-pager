@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/modules/jquery.fullPage.css" />
    
-<!--    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />-->
+    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
@@ -28,14 +28,15 @@
 //                scrollBar:true,
                 anchors: ['header', 'whoweare', 'whatwedo', 'whowesupport', 'whyjoinus', 'community', 'contact'],
                 menu: '#menu',
-                fitToSectionDelay: 500,
+//                fitToSectionDelay: 500,
 //                paddingTop: '73px',
 //                paddingBottom: '73px', 
 //                responsiveWidth: 1000,
 //                responsiveHeight: 500, 
-//                scrollBar: true,
+                fitToSection: false,
+                scrollBar: true,
                 
-//                autoScrolling: false,
+                autoScrolling: false,
 //                normalScrollElements: '.overlay, .joinUsForm, #joinUs',
                 
                 onLeave: function(index, nextIndex, direction){
@@ -45,12 +46,12 @@
             
             });
             
-            $('.js-tilt').tilt({
-                glare: true,
-                maxGlare: 0.1,
-                maxTilt:        10,
-                perspective:    3000, 
-            })
+//            $('.js-tilt').tilt({
+//                glare: true,
+//                maxGlare: 0.1,
+//                maxTilt:        10,
+//                perspective:    3000, 
+//            })
             
 //            $.stellar({
 //                verticalOffset: 73,

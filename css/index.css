@@ -320,8 +320,7 @@ h1 {
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-right: 80px;
-  mix-blend-mode: overlay; }
+  margin-right: 80px; }
 
 h2 {
   text-transform: uppercase;
@@ -512,7 +511,8 @@ ul {
   grid-template-rows: 1fr;
   height: 100%;
   align-items: center;
-  position: relative; }
+  position: relative;
+  min-height: 61vh; }
 
 .rightSection .fp-tableCell {
   grid-template-columns: 2fr 1fr; }
@@ -607,8 +607,6 @@ hr.titleLine {
   background-size: 19px 100%; }
 
 .section .container.titleBox {
-  border: 0px solid transparent;
-  border-top: 0px solid transparent;
   box-sizing: border-box;
   height: 100%;
   position: relative;
@@ -620,20 +618,20 @@ hr.titleLine {
     text-align: center;
     position: relative; }
 
-.section .container.titleBox.titleBoxLarge {
-  border: 30px solid transparent;
-  border-top: 103px solid transparent; }
-
 .backgroundImage {
   position: absolute;
   height: 100%;
   top: 0;
   left: 0;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #1f2833; }
   .backgroundImage img {
     height: 100%;
-    animation: kenburns 100s linear 0s infinite alternate; }
+    animation: kenburns 350s linear 0s infinite alternate;
+    filter: grayscale(100);
+    mix-blend-mode: luminosity;
+    position: absolute; }
 
 @keyframes kenburns {
   0% {
