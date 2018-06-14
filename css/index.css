@@ -315,12 +315,13 @@ html {
 /* =10px */
 h1 {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   letter-spacing: 0.3rem;
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-right: 80px; }
+  margin-right: 80px;
+  mix-blend-mode: overlay; }
 
 h2 {
   text-transform: uppercase;
@@ -506,7 +507,7 @@ ul {
   text-align: center;
   vertical-align: middle;
   display: grid !important;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   width: 100%;
   grid-template-rows: 1fr;
   height: 100%;
@@ -514,7 +515,7 @@ ul {
   position: relative; }
 
 .rightSection .fp-tableCell {
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 2fr 1fr; }
 
 .section {
   position: relative; }

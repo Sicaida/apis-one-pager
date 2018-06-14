@@ -9,7 +9,7 @@
     text-align: center;
     vertical-align: middle;
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
     grid-template-rows: 1fr;
     height: 100%;
@@ -19,7 +19,7 @@
 } 
 
 .rightSection .fp-tableCell{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
 }
 
 //@mixin responsiveSection{
