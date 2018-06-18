@@ -315,12 +315,13 @@ html {
 /* =10px */
 h1 {
   text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.3rem;
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin-right: 80px; }
+  margin: 0;
+  margin-bottom: 20px; }
 
 h2 {
   text-transform: uppercase;
@@ -380,6 +381,9 @@ ul {
   cursor: pointer; }
   .joinUsLinks:hover {
     color: #ee8a1e; }
+
+button, input, optgroup, select, textarea {
+  background: #ededed; }
 
 #menu {
   background: #1f2833;
@@ -530,9 +534,15 @@ ul {
     grid-column: span 1;
     /* padding: 220px; */
     /* height: 100%; */
-    width: 100%; }
+    width: 100%;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-sizing: border-box; }
     .section .container .content {
       will-change: transform, opacity; }
+      .section .container .content h1 {
+        grid-column: span 3; }
     @media (max-width: 1000px) {
       .section .container {
         width: 100%; } }
@@ -542,7 +552,9 @@ ul {
   background-size: cover;
   background-position: center;
   background-position: bottom;
-  min-height: 100vh; }
+  height: 80vh !important; }
+  #section0 .fp-tableCell {
+    height: 100% !important; }
   #section0 h1 {
     color: #ee8a1e;
     -vendor-animation-delay: 2s;
@@ -553,7 +565,7 @@ ul {
   background-size: cover;
   background-position: center; }
   #section1 h1 {
-    color: white;
+    color: #ee8a1f;
     -vendor-animation-delay: 2s; }
 
 #section2 {
@@ -623,14 +635,14 @@ hr.titleLine {
   height: 100%;
   top: 0;
   left: 0;
+  display: grid;
   width: 100%;
   overflow: hidden;
   background: #1f2833; }
   .backgroundImage img {
-    height: 100%;
-    animation: kenburns 350s linear 0s infinite alternate;
-    filter: grayscale(100);
-    mix-blend-mode: luminosity;
+    height: 120%;
+    align-self: center;
+    mix-blend-mode: lighten;
     position: absolute; }
 
 @keyframes kenburns {
@@ -644,8 +656,8 @@ hr.titleLine {
 
 .staff {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem; }
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0.9rem; }
   @media (max-width: 500px) {
     .staff {
       grid-gap: 0.5rem; } }
@@ -671,7 +683,6 @@ hr.titleLine {
     will-change: opacity;
     width: 100%;
     mix-blend-mode: screen;
-    filter: grayscale(100%);
     z-index: 1; }
     .staffBox .staffPhoto:hover {
       mix-blend-mode: normal;

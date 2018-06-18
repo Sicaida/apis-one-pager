@@ -36,12 +36,18 @@ function closeOverlay(push) {
 
 //Close overlay function
 function closeStaff() {
-    $("#whoWeAreContent").html("<p style='animation-delay: 0.4s'>Apis is a Canberra based professional services firm specialising in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis, digital design, complex procurement and program evaluation and review.  We are a firm of practitioners, known for cooperatively shaping and solving major initiatives, together with our government clients.</p><br><p style='animation-delay: 0.45s'  class='col-3'>Our purpose is to become partners and trusted advisors to our clients; to inspire our people to achieve their best in interesting and challenging environments; and to be pragmatic and agile in meeting our clients’ challenges.</p>");
+    $("#whoWeAreContent").html(`<h1>Who we are</h1>
+                               <p style="animation-delay: 0.4s">Apis specialises in the business of government. Our primary purpose is to assist public service leaders in the effective delivery of  their business. But we pride ourselves on brining a lot more to the relationship. We are a firm of practitioners, known for collaboratively shaping and solving major initiatives, together with our government clients.</p>
+                               <br>
+                               <h2 style="font-size: 0.9rem; margin-bottom: 0;">What's with the bull?</h2>
+                               <p style="animation-delay: 0.45s" class="col-3">
+                               The Apis Bull has been with us since our foundation in 1999. It is synonymous with our name.  Its  origins are based on Apis, the bull god, symbolising prosperity and foresight and providing trusted guidance on issues of change. 
+                               </p>`);
     $('#whoWeAreContent').removeClass('staffInfoBox');
 };
 
 function closeBusinessLine() {
-    $("#whatWeDoContent").html(" <p class='col-3'>Apis specialises in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis and design, digital design, change and transformation, complex procurement and program evaluation and review.</p>");
+    $("#whatWeDoContent").html(` <p class='col-3'>Apis specialises in strategic advisory and digital transformation services as well as hands-on solutions in delivery management, business analysis and design, digital design, change and transformation, complex procurement and program evaluation and review.</p>`);
     $('#whatWeDoContent').removeClass('businessLineInfoBox');
 };
 
@@ -144,7 +150,7 @@ var chooser = randomNoRepeats(['annya', 'anthony', 'belinda', 'danaye', 'dave', 
 chooser();
 
 jQuery(document).ready(function ($) {
-    var staff = 6;
+    var staff = 10;
     for(var i=0; i < staff; i++){
         
         var staffName =chooser();

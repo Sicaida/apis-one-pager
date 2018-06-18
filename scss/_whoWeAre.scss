@@ -1,7 +1,7 @@
 .staff{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 0.9rem;
     @media (max-width:500px){
 //        grid-template-columns: repeat(4, 1fr);
         grid-gap: 0.5rem;
@@ -34,7 +34,7 @@
         will-change: opacity;
         width: 100%;
         mix-blend-mode: screen;
-        filter: grayscale(100%);
+//        filter: grayscale(100%);
         z-index: 1;
         &:hover{
             mix-blend-mode: normal;

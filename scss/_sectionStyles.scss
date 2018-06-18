@@ -45,9 +45,15 @@
         /* height: 100%; */
 //        transform: translate3d(0, 0, 0) !important;
         width: 100%;
-        
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        box-sizing: border-box;
         .content{
             will-change: transform, opacity;
+            h1{
+                grid-column: span 3;
+            }
         }
         @media (max-width:1000px){
             width: 100%;
@@ -60,7 +66,10 @@
 //    background-image: url("/images/canberra-morning-lake-burley-griffin.jpg");
     @include section;
     background-position: bottom;
-    min-height: 100vh; 
+    height: 80vh !important; 
+    .fp-tableCell{
+        height: 100% !important;
+    }
     h1{
         color: $orange;
         -vendor-animation-delay: 2s;
@@ -75,7 +84,7 @@
 //    background-image: url("/images/whoWeAre.png");
     @include section; 
     h1{
-        color: white;
+        color: #ee8a1f;
         -vendor-animation-delay: 2s;
     }
 }
@@ -169,15 +178,16 @@ hr.titleLine {
     height: 100%;
     top: 0;
     left: 0;
-   
+    display: grid;
     width: 100%;
     overflow: hidden;
     background: $dark;
     img{
-        height: 100%;
-        animation: kenburns 350s linear 0s infinite alternate;
-        filter: grayscale(100);
-        mix-blend-mode: luminosity;
+        height: 120%;
+        align-self: center;
+//        animation: kenburns 350s linear 0s infinite alternate;
+//        filter: grayscale(100);
+        mix-blend-mode: lighten;
         position: absolute;
     }
 }

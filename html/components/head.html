@@ -9,18 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/modules/jquery.fullPage.css" />
    
-    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />
+<!--    <link rel="stylesheet" type="text/css"  href="/modules/animate.css" />-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="modules/jquery.fullPage.js"></script>
     <script type="text/javascript" src="/modules/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    <script src="/modules/wow.min.js"></script>
+
 
 <!--    <script type="text/javascript" src="/modules/fullpage.offsetSections.limited.min.js"></script>-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2xf0pkN1kpm0UThtiI1wADjMqF3varS8"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            
+            new WOW().init();
             
             $('#fullpage').fullpage({
                 loopBottom: false,
@@ -53,15 +55,15 @@
 //                perspective:    3000, 
 //            })
             
-//            $.stellar({
+            $.stellar({
 //                verticalOffset: 73,
-//                horizontalOffset: 0,
-//                hideDistantElements: false,
-//                horizontalScrolling: false,
-//                positionProperty: 'transform',
-//
-//
-//            });
+                horizontalOffset: 0,
+                hideDistantElements: false,
+                horizontalScrolling: false,
+                positionProperty: 'transform',
+
+
+            });
         });
     </script>
 </head>
